@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+
+{% block pagestyles %}
+    <link href="{{ url_for('static', filename='dist/css/account.css') }}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block content %}
+  <div class="formwrapper">
+    <form method=post>
+      <div class="logo">
+        <img src="{{ url_for('static', filename='dist/img/logo.png') }}">
+      </div>
+      {% for message in get_flashed_messages() %}
+        <div class="alert alert-warning">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            {{ message }}
+        </div>
+      {% endfor %}
+      <h1>Sign Up</h1>
+      <div class="name">
+        {{ form.name.label }}
+        {{ form.name(placeholder='John Smith') }}
+        {% if form.name.errors %}
+          <ul class="errors">
+            {% for error in form.email.errors %}<li>{{ error }}</li>{% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+      <div class="email">
+        {{ form.email.label }}
+        {{ form.email(placeholder='youremail@example.com') }}
+        {% if form.email.errors %}
+          <ul class="errors">
+            {% for error in form.email.errors %}<li>{{ error }}</li>{% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+      <div class="password">
+        {{ form.password.label }}
+        {{ form.password }}
+        {% if form.password.errors %}
+          <ul class="errors">
+            {% for error in form.password.errors %}<li>{{ error }}</li>{% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+      <div class="confirm">
+        {{ form.confirm.label }}
+        {{ form.confirm }}
+        {% if form.confirm.errors %}
+          <ul class="errors">
+            {% for error in form.confirm.errors %}<li>{{ error }}</li>{% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+      <div class="website">
+        {{ form.website.label }}
+        {{ form.website(placeholder='http://example.com') }}
+      </div>
+      <div class="submitbutton">
+        <input id="submit" type="submit" value="Submit">
+      </div>
+    </form>
+    <div class="loginsignup">
+      <span>Already have an account? <a href="{{ url_for('auth_bp.login_page') }}">Log in.</a><span>
+    </div>
+  </div>
+{% endblock %}

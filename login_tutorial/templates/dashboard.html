@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block pagestyles %}
+  <link href="{{ url_for('static', filename='dist/css/dashboard.css') }}" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://use.typekit.net/sus7rlu.css">
+{% endblock %}
+
+{% block content %}
+    <h1>{{body}}</h1>
+
+    {% if current_user.is_authenticated %}
+    <p>Hi {{ current_user.name }}!</p>
+    <a href="{{ url_for('auth_bp.logout_page') }}">Log out</a>
+  {% endif %}
+{% endblock %}

@@ -1,0 +1,150 @@
+@import 'vars.less';
+
+.signup-page,
+.login-page {
+  background: @background-color;
+
+  .formwrapper {
+    background: white;
+    width: 500px;
+    margin: 80px auto 0;
+    box-shadow: @box-shadow;
+    padding: 50px;
+
+    @media(max-width: 600px) {
+      width: 100%;
+      margin: 15px auto;
+      padding: 30px;
+    }
+
+    .logo {
+      text-align: center;
+      margin: 0 auto 20px;
+      img {
+        width: 30px;
+        margin: auto;
+
+        @media(max-width: 600px) {
+          width: 25px;
+        }
+      }
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      color: @header-color;
+      font-weight: 300;
+      border-bottom: 1px solid #dee2ef;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+
+      @media(max-width: 600px) {
+        font-size: 1.3rem;
+      }
+    }
+
+    input {
+      padding: 10px;
+      margin-bottom: 15px;
+      width: 100%;
+      border-radius: 2px;
+      border: 1px solid #d4d9e3;
+      font-weight: 200;
+      color: #4d5060;
+      font-family: @body-font;
+      transition: @transition;
+      @media(max-width: 600px){
+        font-size: .9em;
+      }
+
+      &::placeholder {
+        color: #d4d9e3;
+      }
+
+      &:hover {
+        border-color: @theme-color;
+        background: #d9f6ff;
+
+        &::placeholder {
+          color: @theme-color;
+        }
+      }
+
+      &:focus {
+        background: white;
+        border-color: @theme-color;
+        box-shadow: unset;
+
+        &::placeholder {
+          color: #d4d9e3;
+        }
+      }
+    }
+
+    label {
+      font-size: .9em;
+      color: @header-color;
+      margin-bottom: 5px;
+      display: block;
+      font-weight: 300;
+    }
+
+    input[type="submit"] {
+      background: @theme-color;
+      border: 0;
+      color: white;
+      border-radius: 2px;
+      margin-top: 15px;
+      font-weight: 400;
+      border: 1px solid @theme-color;
+      transition: @transition;
+
+      &:hover {
+        cursor: pointer;
+        background: white;
+        color: @theme-color;
+      }
+    }
+
+    .errors {
+      margin-top: -11px;
+      margin-bottom: 1rem;
+      list-style: none;
+      padding: 0;
+      font-size: .9em;
+      color: #b75353;
+    }
+
+    .loginsignup {
+      text-align: center;
+      font-weight: 300;
+      font-size: 0.8em;
+
+      a {
+        color: @theme-color;
+        font-weight: 500;
+      }
+    }
+
+    .alert-warning {
+      color: #856404;
+      background-color: #fff3cd;
+      border-color: #ffeeba;
+      font-weight: 300;
+      font-size: .8em;
+      margin: 30px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @media(max-width: 600px) {
+        padding: 10px 15px;
+      }
+
+      .close {
+        color: #856404;
+        font-weight: 300;
+        order: 1;
+      }
+    }
+  }
+}
