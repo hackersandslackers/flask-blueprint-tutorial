@@ -7,15 +7,15 @@ verify_ssl = true
 python-dotenv="*"
 
 [packages]
-Flask="*"
-Flask-SQLAlchemy="*"
-Flask-Login="*"
-Flask-Assets="*"
-psycopg2-binary="*"
+Flask = "*"
+Flask-SQLAlchemy = "*"
+Flask-Login = "*"
+Flask-Assets = "*"
+psycopg2-binary = "*"
 wtforms = "*"
-lesscpy="*"
-cssmin="*"
-jsmin="*"
+lesscpy = "*"
+cssmin = "*"
+jsmin = "*"
 
 [requires]
 python_version = "3.7"

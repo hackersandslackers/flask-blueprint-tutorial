@@ -13,7 +13,6 @@ main_bp = Blueprint('main_bp', __name__,
                     static_folder='static')
 assets = Environment(app)
 Environment.auto_build = True
-Environment.debug = False
 
 # Flask-Assets Configuration
 less_bundle = Bundle('src/less/dashboard.less',

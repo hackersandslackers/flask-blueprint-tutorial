@@ -13,9 +13,8 @@ from . import login_manager
 auth_bp = Blueprint('auth_bp', __name__,
                     template_folder='templates',
                     static_folder='static')
-assets = Environment(app)
+assets = Environment(auth_bp)
 Environment.auto_build = True
-Environment.debug = False
 
 # Flask-Assets Configuration
 less_bundle = Bundle('src/less/account.less',
