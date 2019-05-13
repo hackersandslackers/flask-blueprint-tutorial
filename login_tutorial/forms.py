@@ -1,3 +1,4 @@
+"""Create form logic."""
 from wtforms import Form, StringField, PasswordField, validators, SubmitField
 from wtforms.validators import ValidationError, DataRequired, Email, EqualTo, Length, Optional
 
@@ -6,7 +7,7 @@ class SignupForm(Form):
     """User Signup Form."""
 
     name = StringField('Name',
-                        validators=[DataRequired(message=('Enter a fake name or something.'))])
+                       validators=[DataRequired(message=('Enter a fake name or something.'))])
     email = StringField('Email',
                         validators=[Length(min=6, message=('Please enter a valid email address.')),
                                     Email(message=('Please enter a valid email address.')),

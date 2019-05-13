@@ -12,4 +12,4 @@
 [![GitHub Stars](https://img.shields.io/github/stars/toddbirchard/flasklogin-tutorial.svg?style=flat-square&colorB=e3bb18&colorA=36363e&logo=GitHub)](https://github.com/toddbirchard/flasklogin-tutorial/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/toddbirchard/flasklogin-tutorial.svg?style=flat-square&colorA=36363e&logo=GitHub)](https://github.com/toddbirchard/flasklogin-tutorial/network)
 
-https://hackersandslackers.com/authenticating-users-with-flask-login/
+Source code for the accompanying tutorial found here: https://hackersandslackers.com/authenticating-users-with-flask-login/

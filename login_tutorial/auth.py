@@ -1,5 +1,6 @@
+"""Routes for user authentication."""
 import os
-from flask import redirect, render_template, flash, Blueprint, request, session, url_for
+from flask import redirect, render_template, flash, Blueprint, request, url_for
 from flask_assets import Environment, Bundle
 from flask_login import login_required, logout_user, current_user, login_user
 from flask import current_app as app
@@ -26,8 +27,9 @@ js_bundle = Bundle('src/js/main.js',
                    output='dist/js/main.min.js')
 assets.register('less_all', less_bundle)
 assets.register('js_all', js_bundle)
-less_bundle.build()
-js_bundle.build()
+if app.config['FLASK_ENV'] == 'development':
+    less_bundle.build()
+    js_bundle.build()
 
 
 @auth_bp.route('/login', methods=['GET', 'POST'])
