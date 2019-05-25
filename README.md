@@ -10,9 +10,9 @@
 ![Redis](https://img.shields.io/badge/Redis-v3.2.1-red.svg?longCache=true&style=flat-square&logo=redis&logoColor=white&colorA=36363e&colorB=D82C20)
 ![WTForms](https://img.shields.io/badge/WTForms-v2.2.1-blue.svg?longCache=true&logo=python&style=flat-square&logoColor=white&colorB=23a8e2&colorA=36363e)
 ![GitHub Last Commit](https://img.shields.io/github/last-commit/google/skia.svg?style=flat-square&colorA=36363e&logo=GitHub)
-[![GitHub Issues](https://img.shields.io/github/issues/toddbirchard/flasksession-tutorial.svg?style=flat-square&colorA=36363e&logo=GitHub)](https://github.com/toddbirchard/flasksession-tutorial/issues)
-[![GitHub Stars](https://img.shields.io/github/stars/toddbirchard/flasksession-tutorial.svg?style=flat-square&colorB=e3bb18&colorA=36363e&logo=GitHub)](https://github.com/toddbirchard/flasksession-tutorial/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/toddbirchard/flasksession-tutorial.svg?style=flat-square&colorA=36363e&logo=GitHub)](https://github.com/toddbirchard/flasksession-tutorial/network)
+[![GitHub Issues](https://img.shields.io/github/issues/hackersandslackers/flasksession-tutorial.svg?style=flat-square&colorA=36363e&logo=GitHub)](https://github.com/hackersandslackers/flasksession-tutorial/issues)
+[![GitHub Stars](https://img.shields.io/github/stars/hackersandslackers/flasksession-tutorial.svg?style=flat-square&colorB=e3bb18&colorA=36363e&logo=GitHub)](https://github.com/hackersandslackers/flasksession-tutorial/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/hackersandslackers/flasksession-tutorial.svg?style=flat-square&colorA=36363e&logo=GitHub)](https://github.com/hackersandslackers/flasksession-tutorial/network)
 
 ![Flask Session Redis Tutorial](https://hackersandslackers.com/content/images/2019/05/flask-session.jpg)
 
