@@ -1,35 +1,19 @@
 """Routes for user authentication."""
-import os
 from flask import redirect, render_template, flash, Blueprint, request, url_for
-from flask_assets import Environment, Bundle
 from flask_login import login_required, logout_user, current_user, login_user
 from flask import current_app as app
-from werkzeug.security import generate_password_hash, check_password_hash
+from werkzeug.security import generate_password_hash
+from .assets import compile_auth_assets
 from .forms import LoginForm, SignupForm
 from .models import db, User
-from . import login_manager
+from .import login_manager
 
 
 # Blueprint Configuration
 auth_bp = Blueprint('auth_bp', __name__,
                     template_folder='templates',
                     static_folder='static')
-assets = Environment(auth_bp)
-Environment.auto_build = True
-
-# Flask-Assets Configuration
-less_bundle = Bundle('src/less/account.less',
-                     filters='less,cssmin',
-                     output='dist/css/account.css',
-                     extra={'rel': 'stylesheet/less'})
-js_bundle = Bundle('src/js/main.js',
-                   filters='jsmin',
-                   output='dist/js/main.min.js')
-assets.register('less_all', less_bundle)
-assets.register('js_all', js_bundle)
-if app.config['FLASK_ENV'] == 'development':
-    less_bundle.build()
-    js_bundle.build()
+compile_auth_assets(app)
 
 
 @auth_bp.route('/login', methods=['GET', 'POST'])

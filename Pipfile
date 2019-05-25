@@ -4,18 +4,18 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-python-dotenv="*"
-lesscpy = "*"
-cssmin = "*"
-jsmin = "*"
+Python-Dotenv = "*"
+LESSCpy = "*"
+CSSMin = "*"
+JSMin = "*"
 
 [packages]
 Flask = "*"
 Flask-SQLAlchemy = "*"
 Flask-Login = "*"
 Flask-Assets = "*"
-psycopg2-binary = "*"
-wtforms = "*"
+Psycopg2-Binary = "*"
+WTForms = "*"
 
 [requires]
 python_version = "3.7"

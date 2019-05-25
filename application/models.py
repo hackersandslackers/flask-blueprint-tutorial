@@ -1,4 +1,4 @@
-"""Database mdoels."""
+"""Database models."""
 from . import db
 from flask_login import UserMixin
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -10,35 +10,29 @@ class User(UserMixin, db.Model):
     __tablename__ = 'flasklogin-users'
 
     id = db.Column(db.Integer,
-                   primary_key=True,
-                   )
+                   primary_key=True)
     name = db.Column(db.String,
                      nullable=False,
                      unique=False)
     email = db.Column(db.String(40),
                       unique=True,
-                      nullable=False
-                      )
+                      nullable=False)
     password = db.Column(db.String(200),
                          primary_key=False,
                          unique=False,
-                         nullable=False
-                         )
+                         nullable=False)
     website = db.Column(db.String(60),
                         index=False,
                         unique=False,
-                        nullable=True
-                        )
+                        nullable=True)
     created_on = db.Column(db.DateTime,
                            index=False,
                            unique=False,
-                           nullable=True
-                           )
+                           nullable=True)
     last_login = db.Column(db.DateTime,
                            index=False,
                            unique=False,
-                           nullable=True
-                           )
+                           nullable=True)
 
     def set_password(self, password):
         """Create hashed password."""

@@ -26,9 +26,6 @@ def create_app():
         app.register_blueprint(routes.main_bp)
         app.register_blueprint(auth.auth_bp)
 
-        # Login view
-        # login_manager.login_view = "auth_bp.login_page"
-
         # Create Database Models
         db.create_all()
 

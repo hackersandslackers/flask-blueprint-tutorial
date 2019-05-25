@@ -1,5 +1,4 @@
 """A setuptools based setup module."""
-
 from os import path
 from setuptools import setup, find_packages
 from io import open
@@ -34,13 +33,10 @@ setup(
     packages=find_packages(),  # Required
     install_requires=['flask',
                       'flask_login',
-                      'flask_redis',
                       'flask_sqlalchemy',
                       'flask_assets',
                       'psycopg2-binary',
-                      'bcrypt',
-                      'lesscpy',
-                      'pathlib'
+                      'wtforms'
                       ],
     extras_require={
         'dev': ['check-manifest'],

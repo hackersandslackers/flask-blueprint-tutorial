@@ -6,7 +6,7 @@
 
   .formwrapper {
     background: white;
-    width: 500px;
+    width: 470px;
     margin: 80px auto 0;
     box-shadow: @box-shadow;
     padding: 50px;
@@ -44,7 +44,7 @@
     }
 
     input {
-      padding: 10px;
+      padding: 10px 13px;
       margin-bottom: 15px;
       width: 100%;
       border-radius: 2px;
@@ -53,6 +53,9 @@
       color: #4d5060;
       font-family: @body-font;
       transition: @transition;
+      font-size: .9em;
+      outline-color: transparent;
+      outline-style: none;
       @media(max-width: 600px){
         font-size: .9em;
       }
@@ -145,6 +148,10 @@
         font-weight: 300;
         order: 1;
       }
+    }
+
+    .loginsignup {
+      margin-top: 20px;
     }
   }
 }
