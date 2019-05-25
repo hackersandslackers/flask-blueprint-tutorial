@@ -5,17 +5,9 @@
   <link rel="stylesheet" href="https://use.typekit.net/sus7rlu.css">
 {% endblock %}
 
-{% block nav %}
-  <nav style="position:absolute; top:20px; right:20px;">
-    <a href="{{ url_for('main_bp.session_view') }}" style="color:white">Session test</a>
-  </nav>
-{% endblock %}
-
 {% block content %}
     <h1>{{body}}</h1>
-
     {% if current_user.is_authenticated %}
-    <p>Hi {{ current_user.name }}!</p>
-    <a href="{{ url_for('auth_bp.logout_page') }}">Log out</a>
+    <p class="session">Here's our session variable: <span class="variable">{{session_variable}}</span></p>
   {% endif %}
 {% endblock %}

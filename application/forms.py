@@ -5,7 +5,6 @@ from wtforms.validators import ValidationError, DataRequired, Email, EqualTo, Le
 
 class SignupForm(Form):
     """User Signup Form."""
-
     name = StringField('Name',
                        validators=[DataRequired(message=('Enter a fake name or something.'))])
     email = StringField('Email',
@@ -24,7 +23,6 @@ class SignupForm(Form):
 
 class LoginForm(Form):
     """User Login Form."""
-
     email = StringField('Email', validators=[DataRequired('Please enter a valid email address.'),
                                              Email('Please enter a valid email address.')])
     password = PasswordField('Password', validators=[DataRequired('Uhh, your password tho?')])

@@ -1,13 +1,23 @@
 @import 'vars.less';
 
-html,
-body {
+body,
+html {
   font-family: @body-font;
 }
 
 .dashboard-template {
   color: white;
   background: @theme-color;
+
+  nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    a {
+      color: white;
+    }
+  }
 
   .container {
     text-align: center;
@@ -29,6 +39,11 @@ body {
       font-size: 1.5em;
       font-weight: 300;
       text-shadow: 0 0 3px #507b89;
+
+      span {
+        font-weight: 600;
+        display: block;
+      }
     }
 
     a {
@@ -38,13 +53,20 @@ body {
       margin-top: 50px;
       display: block;
       color: white;
-      opacity: .7;
+      opacity: 0.7;
       transition: @transition;
 
-      &:hover{
+      &:hover {
         cursor: pointer;
         opacity: 1;
       }
+    }
+  }
+
+  .session {
+    font-size: 1em !important;
+    .variable {
+      font-size: 1.5em !important;
     }
   }
 }

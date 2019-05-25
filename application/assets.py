@@ -20,7 +20,7 @@ def compile_auth_assets(app):
     assets.register('js_all', js_bundle)
     # Build assets in development mode
     if app.config['FLASK_ENV'] == 'development':
-        less_bundle.build()
+        less_bundle.build(force=True)
         js_bundle.build()
 
 
@@ -38,4 +38,10 @@ def compile_main_assets(app):
     assets.register('less_all', less_bundle)
     # Build assets in development mode
     if app.config['FLASK_ENV'] == 'development':
-        less_bundle.build()
+        less_bundle.build(force=True)
+
+
+def compile_assets(app):
+    """Compile all asset bundles."""
+    compile_auth_assets(app)
+    compile_main_assets(app)

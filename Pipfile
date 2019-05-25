@@ -5,7 +5,7 @@ verify_ssl = true
 
 [dev-packages]
 Python-Dotenv = "*"
-LESSCpy = "*"
+Lesscpy = "*"
 CSSMin = "*"
 JSMin = "*"
 
@@ -14,8 +14,10 @@ Flask = "*"
 Flask-SQLAlchemy = "*"
 Flask-Login = "*"
 Flask-Assets = "*"
+Flask-Session = "*"
 Psycopg2-Binary = "*"
 WTForms = "*"
+Redis = "*"
 
 [requires]
 python_version = "3.7"
