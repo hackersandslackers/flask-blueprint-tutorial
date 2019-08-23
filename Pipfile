@@ -11,13 +11,7 @@ JSMin = "*"
 
 [packages]
 Flask = "*"
-Flask-SQLAlchemy = "*"
-Flask-Login = "*"
 Flask-Assets = "*"
-Flask-Session = "*"
-Psycopg2-Binary = "*"
-WTForms = "*"
-Redis = "*"
 
 [requires]
 python_version = "3.7"

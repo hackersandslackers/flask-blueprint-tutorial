@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block pagestyles %}
+  <link href="{{ url_for('static', filename='dist/css/landing.css') }}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% include 'navigation.html' %}
+
+{% block content %}
+    <h1>{{body}}</h1>
+{% endblock %}
