@@ -11,11 +11,9 @@ def create_app():
 
     with app.app_context():
         # Import parts of our application
-        from .account import account_routes
-        from .landing import landing_routes
-        from .landing.assets import compile_assets
-        app.register_blueprint(account_routes.account_bp)
-        app.register_blueprint(landing_routes.landing_bp)
-        compile_assets(app)
+        from .admin import admin_routes
+        from .main import main_routes
+        app.register_blueprint(admin_routes.admin_bp)
+        app.register_blueprint(main_routes.main_bp)
 
         return app

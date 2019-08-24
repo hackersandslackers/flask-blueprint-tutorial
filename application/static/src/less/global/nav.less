@@ -3,10 +3,29 @@
 nav {
     background: #5eb9d7;
     color: white;
+    padding: 20px;
+    width: auto;
+
+    .nav-wrapper {
+      max-width: 900px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: auto;
+      margin: 0 auto;
+
+      .left-nav {
+        a {
+          margin-right: 10px;
+          font-weight: 300;
+        }
+      }
+    }
 
     a {
         color: white;
-        transition: all .2s ease-out;
+        transition: @transition;
+        text-decoration: none;
 
         &:hover {
             cursor: pointer;
