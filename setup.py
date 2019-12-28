@@ -32,7 +32,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'name=wsgi:__main__',
+            'install=wsgi:__main__',
         ],
     },
     project_urls={
