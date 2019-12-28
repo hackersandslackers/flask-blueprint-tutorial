@@ -8,7 +8,7 @@
 [![GitHub Stars](https://img.shields.io/github/stars/hackersandslackers/flaskblueprint-tutorial.svg?style=flat-square8&colorA=4c566a&logo=GitHub&colorB=ebcb8b)](https://github.com/hackersandslackers/flaskblueprint-tutorial/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/hackersandslackers/flaskblueprint-tutorial.svg?style=flat-square&colorA=4c566a&logo=GitHub&colorB=ebcb8b)](https://github.com/hackersandslackers/flaskblueprint-tutorial/network)
 
-![Flask Blueprint Tutorial](https://storage.googleapis.com/hackersandslackers-cdn/2019/05/flaskblueprints@2x.jpg)
+![Flask Blueprint Tutorial](https://res-4.cloudinary.com/hackers/image/upload/q_auto/v1/2019/12/flaskblueprints-2@2x.jpg)
 
 Source code for the accompanying tutorial found here: https://hackersandslackers.com/organizing-flask-with-blueprints/
 
@@ -18,7 +18,7 @@ Installation is recommended with Pipenv:
 
 ```shell
 $ git clone https://github.com/hackersandslackers/flaskblueprint-tutorial.git
-$ cd django-intro-tutorial
+$ cd flaskblueprint-tutorial
 $ pipenv shell
 $ pipenv update
 $ python3 main.py
@@ -28,7 +28,7 @@ Alternatively, try installing via `setup.py`:
 
 ```shell
 $ git clone https://github.com/hackersandslackers/flaskblueprint-tutorial.git
-$ cd django-intro-tutorial
+$ cd flaskblueprint-tutorial
 $ python3 setup.py install
 $ python3 main.py
 ```
