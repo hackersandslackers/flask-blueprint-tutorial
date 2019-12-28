@@ -23,6 +23,7 @@ wheels/
 .installed.cfg
 *.egg
 MANIFEST
+dist/
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -101,3 +102,6 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# DS Store
+.DS_Store
