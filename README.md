@@ -21,7 +21,7 @@ $ git clone https://github.com/hackersandslackers/flaskblueprint-tutorial.git
 $ cd flaskblueprint-tutorial
 $ pipenv shell
 $ pipenv update
-$ python3 main.py
+$ python3 wsgi.py
 ```
 
 Alternatively, try installing via `setup.py`:
@@ -30,9 +30,8 @@ Alternatively, try installing via `setup.py`:
 $ git clone https://github.com/hackersandslackers/flaskblueprint-tutorial.git
 $ cd flaskblueprint-tutorial
 $ python3 setup.py install
-$ python3 main.py
+$ python3 wsgi.py
 ```
 -----
 
 **Hackers and Slackers** tutorials are free of charge. If you found this tutorial helpful, a [small donation](https://www.buymeacoffee.com/hackersslackers) would be greatly appreciated to keep us in business. All proceeds go towards coffee, and all coffee goes towards more content.
-
