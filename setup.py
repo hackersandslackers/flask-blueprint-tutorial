@@ -15,7 +15,7 @@ setup(
     description='Source code for the accompanying tutorial on how to use Blueprints in Flask.',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/toddbirchard/flaskblueprint-tutorial',
+    url='https://github.com/hackersandslackers/flaskblueprint-tutorial',
     author='Todd Birchard',
     author_email='toddbirchard@gmail.com',
     classifiers=[
@@ -36,7 +36,7 @@ setup(
         ],
     },
     project_urls={
-        'Bug Reports': 'https://github.com/toddbirchard/flaskblueprint-tutorial/issues',
-        'Source': 'https://github.com/toddbirchard/flaskblueprint-tutorial/',
+        'Bug Reports': 'https://github.com/hackersandslackers/flaskblueprint-tutorial/issues',
+        'Source': 'https://github.com/hackersandslackers/flaskblueprint-tutorial/',
     },
 )
