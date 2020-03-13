@@ -10,7 +10,7 @@
 
 ![Flask Blueprint Tutorial](https://res-4.cloudinary.com/hackers/image/upload/q_auto/v1/2019/12/flaskblueprints-2@2x.jpg)
 
-Structure your Flask apps in a scalable and intelligent way using Blueprints. This repository contains source code for the accompanying tutorial on Hackers and Slackers: https://hackersandslackers.com/organizing-flask-with-blueprints/
+Structure your Flask apps in a scalable and intelligent way using Blueprints. This repository contains source code for the accompanying tutorial on Hackers and Slackers: https://hackersandslackers.com/flask-blueprints/
 
 ## Getting Started
 
