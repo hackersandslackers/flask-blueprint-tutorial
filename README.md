@@ -10,7 +10,7 @@
 
 ![Flask Blueprint Tutorial](https://res-4.cloudinary.com/hackers/image/upload/q_auto/v1/2019/12/flaskblueprints-2@2x.jpg)
 
-Structure your Flask apps in a scalable and intelligent way using Blueprints. This reposiroty contains source code for the accompanying tutorial on Hackers and Slackers: https://hackersandslackers.com/organizing-flask-with-blueprints/
+Structure your Flask apps in a scalable and intelligent way using Blueprints. This repository contains source code for the accompanying tutorial on Hackers and Slackers: https://hackersandslackers.com/organizing-flask-with-blueprints/
 
 ## Getting Started
 
@@ -24,7 +24,7 @@ $ pipenv update
 $ python3 main.py
 ```
 
-Alternatively, try installing via `setup.py`:
+Alternatively, try installing via **setup.py**:
 
 ```shell
 $ git clone https://github.com/hackersandslackers/flask-blueprint-tutorial.git

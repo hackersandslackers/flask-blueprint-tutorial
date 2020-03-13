@@ -1,10 +1,11 @@
 @import 'variables.less';
 
 nav {
-    background: #5eb9d7;
-    color: white;
-    padding: 20px;
+    background: #fff;
+    padding: 30px;
     width: auto;
+    margin-bottom: 40px;
+    box-shadow: 0 0 5px #bec6cf;
 
     .nav-wrapper {
       max-width: 900px;
@@ -15,15 +16,23 @@ nav {
       margin: 0 auto;
 
       .left-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+          width: 30px;
+          margin-right: 40px;
+        }
         a {
-          margin-right: 10px;
-          font-weight: 300;
+          margin-right: 20px;
+          font-weight: 400;
         }
       }
     }
 
     a {
-        color: white;
+        color: #4d545d;
         transition: @transition;
         text-decoration: none;
 

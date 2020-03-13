@@ -10,12 +10,12 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='Flask Session Tutorial',
+    name='Flask Blueprint Tutorial',
     version='0.0.1',
     description='Source code for the accompanying tutorial on how to use Blueprints in Flask.',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/hackersandslackers/flaskblueprint-tutorial',
+    url='https://github.com/hackersandslackers/flask-blueprint-tutorial',
     author='Todd Birchard',
     author_email='toddbirchard@gmail.com',
     classifiers=[
@@ -24,7 +24,8 @@ setup(
     keywords='Flask Flask-Assets Blueprints',
     packages=find_packages(),
     install_requires=['Flask',
-                      'Flask_assets'],
+                      'Flask_assets',
+                      'python-dotenv'],
     extras_require={
         'dev': ['check-manifest'],
         'test': ['coverage'],
@@ -36,7 +37,7 @@ setup(
         ],
     },
     project_urls={
-        'Bug Reports': 'https://github.com/hackersandslackers/flaskblueprint-tutorial/issues',
-        'Source': 'https://github.com/hackersandslackers/flaskblueprint-tutorial/',
+        'Bug Reports': 'https://github.com/hackersandslackers/flask-blueprint-tutorial/issues',
+        'Source': 'https://github.com/hackersandslackers/flask-blueprint-tutorial/',
     },
 )
