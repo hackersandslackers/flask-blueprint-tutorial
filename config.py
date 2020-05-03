@@ -20,6 +20,6 @@ class Config:
     LESS_RUN_IN_DEBUG = environ.get('LESS_RUN_IN_DEBUG')
 
     # Static Assets
-    STATIC_FOLDER = environ.get('STATIC_FOLDER')
-    TEMPLATES_FOLDER = environ.get('TEMPLATES_FOLDER')
+    STATIC_FOLDER = 'static'
+    TEMPLATES_FOLDER = 'templates'
     COMPRESSOR_DEBUG = environ.get('COMPRESSOR_DEBUG')

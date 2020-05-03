@@ -13,23 +13,39 @@ html {
 
 ul {
   list-style: none;
-  padding-left: 0;
   width: 50%;
+  border: 1px solid #e6e6e6;
+  padding: 10px;
 
   li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid #ececec;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+
+    &:last-of-type {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
   }
 }
 
 
 .container {
-  max-width: 900px;
+  max-width: 847px;
   margin: 0 auto;
   min-height: 100%;
   background: white;
   padding: 40px;
+  box-shadow: 0 0 5px #bec6cf;
+
+  .attribute-value {
+    font-weight: 300;
+    font-size: .9em;
+  }
 }
 
 h1 {

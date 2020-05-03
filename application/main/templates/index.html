@@ -9,9 +9,10 @@
 <div class="container">
     <h1>{{body}}</h1>
     <ul class="page-properties">
-      <li><span class="attribute-title">Blueprint:</span> <span class="attribute-title">{{ request.blueprint }}</span></li>
-      <li><span class="attribute-title">Template:</span> <span class="attribute-title">{{ self._TemplateReference__context.name }}</span></li>
-      <li><span class="attribute-title">Page:</span> <span class="attribute-title">{{ body }}</span></li>
+      <li><span class="attribute-title">Blueprint:</span> <span class="attribute-value">{{ request.blueprint }}</span></li>
+      <li><span class="attribute-title">Template:</span> <span class="attribute-value">{{ self._TemplateReference__context.name }}</span></li>
+      <li><span class="attribute-title">View:</span> <span class="attribute-value">{{ request.endpoint }}</span></li>
+        <li><span class="attribute-title">Route:</span> <span class="attribute-value">{{ request.path }}</span></li>
     </ul>
 </div>
 {% endblock %}
