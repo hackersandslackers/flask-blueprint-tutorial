@@ -12,9 +12,21 @@
 
 Structure your Flask apps in a scalable and intelligent way using Blueprints. This repository contains source code for the accompanying tutorial on Hackers and Slackers: https://hackersandslackers.com/flask-blueprints/
 
-## Getting Started
 
-Installation is recommended with Pipenv:
+## Installation
+
+**Installation via `requirements.txt`**:
+
+```shell
+$ git clone https://github.com/hackersandslackers/flask-blueprint-tutorial.git
+$ cd flask-blueprint-tutorial
+$ python3 -m venv myenv
+$ source myenv/bin/activate
+$ pip3 install -r requirements.txt
+$ flask run
+```
+
+**Installation via [Pipenv](https://pipenv-fork.readthedocs.io/en/latest/)**:
 
 ```shell
 $ git clone https://github.com/hackersandslackers/flask-blueprint-tutorial.git
@@ -24,13 +36,13 @@ $ pipenv update
 $ flask run
 ```
 
-Alternatively, try installing via **requirements.txt**:
+## Configuration
 
-```shell
-$ git clone https://github.com/hackersandslackers/flask-blueprint-tutorial.git
-$ cd flask-blueprint-tutorial
-$ python3 -m pip install requirements.txt
-$ flask run
+Configuration is handled by creating a **.env** file. This should contain the following variables (replace the values with your own):
+
+```.env
+SECRET_KEY="YOURSECRETKEY"
+FLASK_ENV="production"
 ```
 -----
 
