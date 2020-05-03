@@ -1,35 +1,35 @@
-"""Routes for main pages."""
+"""Routes for landing pages."""
 from flask import Blueprint, render_template
 
 
 # Blueprint Configuration
-main_bp = Blueprint('main_bp', __name__,
-                    template_folder='templates',
-                    static_folder='static')
+landing_bp = Blueprint('landing_bp', __name__,
+                                template_folder='templates',
+                                static_folder='static')
 
 
-@main_bp.route('/', methods=['GET'])
+@landing_bp.route('/', methods=['GET'])
 def home():
     """Homepage route."""
     return render_template('index.jinja2',
                            title='Flask-Blueprint Tutorial | Home',
-                           template='home-template main',
+                           template='home-template landing',
                            body="Home")
 
 
-@main_bp.route('/about', methods=['GET'])
+@landing_bp.route('/about', methods=['GET'])
 def about():
     """About page route."""
     return render_template('index.jinja2',
                            title='Flask-Blueprint Tutorial | About',
-                           template='about-template main',
+                           template='about-template landing',
                            body="About")
 
 
-@main_bp.route('/etc', methods=['GET'])
+@landing_bp.route('/etc', methods=['GET'])
 def etc():
     """Etc page route."""
     return render_template('index.jinja2',
                            title='Flask-Blueprint Tutorial | Etc',
-                           template='etc-template main',
+                           template='etc-template landing',
                            body="Etc")

@@ -1,0 +1,27 @@
+{% extends "layout.jinja2" %}
+
+{% block pagestyles %}
+  <link href="{{ url_for('static', filename='dist/css/profile.css') }}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block content %}
+  {% include "navigation-loggedin.jinja2" %}
+
+  <div class="container">
+    <div class="account-header">
+      <img class="user-avatar" src="{{ user.avatar }}" alt="profile">
+      <div class="account-details">
+        <h1 class="username">{{ user.name }}</h1>
+        <div class="user-personal-info">
+          <div class="user-title meta"><i class="fas fa-suitcase"></i> <span>{{ user.profession }}</span></div>
+          <div class="user-location meta"><i class="fas fa-globe-americas"></i> <span>{{ user.location }}</span></div>
+        </div>
+        <div class="user-social-profiles">
+          <div class="user-website meta"><i class="fas fa-window-maximize"></i> <a
+                  href="{{ user.website }}">{{ user.website }}</a></div>
+        </div>
+      </div>
+    </div>
+    <p class="user-bio">{{ user.bio }}</p>
+  </div>
+{% endblock %}
