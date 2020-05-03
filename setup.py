@@ -19,7 +19,7 @@ setup(
     author='Todd Birchard',
     author_email='toddbirchard@gmail.com',
     classifiers=[
-        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
     ],
     keywords='Flask Flask-Assets Blueprints',
     packages=find_packages(),

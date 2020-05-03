@@ -11,6 +11,7 @@ class Config:
     # General Config
     SECRET_KEY = environ.get('SECRET_KEY')
     FLASK_ENV = environ.get('FLASK_ENV')
+    FLASK_APP = 'wsgi.py'
 
     # Flask-Assets
     LESS_BIN = environ.get('LESS_BIN')
@@ -18,6 +19,6 @@ class Config:
     LESS_RUN_IN_DEBUG = environ.get('LESS_RUN_IN_DEBUG')
 
     # Static Assets
-    STATIC_FOLDER = environ.get('STATIC_FOLDER')
-    TEMPLATES_FOLDER = environ.get('TEMPLATES_FOLDER')
+    STATIC_FOLDER = 'static'
+    TEMPLATES_FOLDER = 'templates'
     COMPRESSOR_DEBUG = environ.get('COMPRESSOR_DEBUG')
