@@ -1,44 +1,45 @@
 @import 'variables.less';
 
 nav {
-    background: #fff;
-    padding: 30px;
-    width: auto;
-    margin-bottom: 40px;
-    box-shadow: 0 0 5px #bec6cf;
+  background: #fff;
+  padding: 30px;
+  width: auto;
+  margin-bottom: 40px;
+  box-shadow: 0 0 5px #bec6cf;
 
-    .nav-wrapper {
-      max-width: 900px;
+  .nav-wrapper {
+    max-width: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    margin: 0 auto;
+
+    .left-nav {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: auto;
-      margin: 0 auto;
 
-      .left-nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+      img {
+        width: 30px;
+        margin-right: 0;
+      }
 
-        img {
-          width: 30px;
-          margin-right: 40px;
-        }
-        a {
-          margin-right: 30px;
-          font-weight: 400;
-        }
+      a {
+        margin-right: 40px;
+        font-weight: 400;
       }
     }
+  }
 
-    a {
-        color: #4d545d;
-        transition: @transition;
-        text-decoration: none;
+  a {
+    color: #4d545d;
+    transition: @transition;
+    text-decoration: none;
 
-        &:hover {
-            cursor: pointer;
-            opacity: .7;
-        }
+    &:hover {
+      cursor: pointer;
+      opacity: .7;
     }
+  }
 }

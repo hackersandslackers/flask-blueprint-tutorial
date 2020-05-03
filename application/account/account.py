@@ -1,11 +1,10 @@
 """Routes for logged-in account panel."""
 from flask import Blueprint, render_template
 
-
 # Blueprint Configuration
 account_bp = Blueprint('account_bp', __name__,
                        template_folder='templates',
-                       static_folder='static')
+                       static_folder='./static')
 
 
 @account_bp.route('/profile', methods=['GET'])

@@ -15,10 +15,10 @@ class Config:
 
     # Flask-Assets
     LESS_BIN = environ.get('LESS_BIN')
-    ASSETS_DEBUG = environ.get('ASSETS_DEBUG')
-    LESS_RUN_IN_DEBUG = environ.get('LESS_RUN_IN_DEBUG')
+    ASSETS_DEBUG = True
+    LESS_RUN_IN_DEBUG = True
 
     # Static Assets
     STATIC_FOLDER = 'static'
     TEMPLATES_FOLDER = 'templates'
-    COMPRESSOR_DEBUG = environ.get('COMPRESSOR_DEBUG')
+    COMPRESSOR_DEBUG = True

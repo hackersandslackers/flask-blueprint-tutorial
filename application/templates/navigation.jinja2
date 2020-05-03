@@ -1,13 +1,21 @@
 <nav class="navigation-default">
   <div class="nav-wrapper">
     <div class="left-nav">
-      <img src="{{ url_for('static', filename='img/logo.png') }}" alt="logo"/>
-      <a href="{{ url_for('landing_bp.home') }}">Home</a>
-      <a href="{{ url_for('landing_bp.about') }}">About</a>
-      <a href="{{ url_for('landing_bp.etc') }}">Etc</a>
+      <a href="{{ url_for('home_bp.home') }}">
+        <img src="{{ url_for('static', filename='img/logo.png') }}" alt="logo"/>
+      </a>
+      {% if request.blueprint == 'home_bp' %}
+        <a href="{{ url_for('home_bp.home') }}">Home</a>
+        <a href="{{ url_for('home_bp.about') }}">About</a>
+        <a href="{{ url_for('home_bp.etc') }}">Etc</a>
+      {% endif %}
     </div>
     <div class="right-nav">
-      <a href="{{ url_for('account_bp.user_profile') }}">My Account</a>
+      {% if request.blueprint == 'home_bp' %}
+        <a href="{{ url_for('account_bp.user_profile') }}">My Account</a>
+      {% else %}
+        <a href="{{ url_for('home_bp.home') }}">Logout</a>
+      {% endif %}
     </div>
   </div>
 </nav>

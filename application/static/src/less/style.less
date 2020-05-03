@@ -6,20 +6,31 @@ html {
   font-family: @body-font;
   margin: 0;
   padding: 0;
-  color: #2a2c2f;
   background: #f0f0f0;
   height: 100%;
+  color: #5f6988;
 
   .container {
     max-width: 847px;
     margin: 0 auto;
-    height: 700px;
+    height: 600px;
     background: white;
     padding: 40px;
     box-shadow: 0 0 5px rgba(65, 67, 144, 0.15);
 
     h1 {
       margin-top: 0;
+    }
+
+    a {
+      color: #5dbad7;
+      transition: @transition;
+      text-decoration: none;
+
+      &:hover {
+        cursor: pointer;
+        opacity: .7;
+      }
     }
   }
 }
