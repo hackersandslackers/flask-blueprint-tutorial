@@ -1,11 +1,11 @@
-{% extends "layout.html" %}
+{% extends "layout.jinja2" %}
 
 {% block pagestyles %}
-  <link href="{{ url_for('static', filename='dist/css/landing.css') }}" rel="stylesheet" type="text/css">
+  <link href="{{ url_for('static', filename='dist/css/style.css') }}" rel="stylesheet" type="text/css">
 {% endblock %}
 
 {% block content %}
-{% include "navigation-loggedin.html" %}
+{% include "navigation-loggedin.jinja2" %}
 
 <div class="container">
     <h1>{{body}}</h1>
