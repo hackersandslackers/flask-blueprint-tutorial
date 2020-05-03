@@ -1,13 +1,14 @@
 {% extends "layout.jinja2" %}
 
 {% block pagestyles %}
-  <link href="{{ url_for('static', filename='dist/css/landing.css') }}" rel="stylesheet" type="text/css">
+  <link href="{{ url_for('static', filename='dist/css/style.css') }}" rel="stylesheet" type="text/css">
 {% endblock %}
 
 {% block content %}
   {% include "navigation-default.jinja2" %}
-  <div class="container">
-    <h1>{{ body }}</h1>
+
+<div class="container">
+    <h1>{{body}}</h1>
     <ul class="page-properties">
       <li><span class="attribute-title">Blueprint:</span> <span class="attribute-value">{{ request.blueprint }}</span></li>
       <li><span class="attribute-title">Template:</span> <span class="attribute-value">{{ self._TemplateReference__context.name }}</span></li>

@@ -11,12 +11,14 @@ def create_app():
         # Import parts of our application
         from .admin import admin_routes
         from .main import main_routes
+        from .assets import compile_static_assets
+
         app.register_blueprint(admin_routes.admin_bp)
         app.register_blueprint(main_routes.main_bp)
-        from .assets import compile_asset_bundles
+        from .assets import compile_static_assets
 
         # Compile static assets
         if app.config['FLASK_ENV'] == 'development':
-            compile_asset_bundles(app)
+            compile_static_assets(app)
 
         return app

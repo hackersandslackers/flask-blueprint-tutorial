@@ -2,20 +2,35 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>{{title}}</title>
-  <meta name="HandheldFriendly" content="True" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="theme-color" content="#5eb9d7" />
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <title>{{ title }}</title>
+  <meta name="description" content="Structure your Flask apps in a scalable and intelligent way using Blueprints."/>
+  <meta name="HandheldFriendly" content="True"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+  <meta name="theme-color" content="#5eb9d7"/>
   <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.png') }}" type="image/x-icon"/>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <meta property="og:site_name" content="{{ title }}"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="{{ title }}"/>
+  <meta property="og:description"  content="Structure your Flask apps in a scalable and intelligent way using Blueprints."/>
+  <meta property="og:url" content="https://flaskblueprints.hackersandslackers.app/"/>
+  <meta name="twitter:title" content="{{ title }}"/>
+  <meta name="twitter:description" content="Structure your Flask apps in a scalable and intelligent way using Blueprints."/>
+  <meta name="twitter:url" content="https://flaskblueprints.hackersandslackers.app/"/>
+  <meta name="twitter:site" content="@hackersslackers"/>
+  <meta name="twitter:creator" content="@toddrbirchard"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://hackersandslackers-cdn.storage.googleapis.com/2020/02/flaskblueprints-2@2x.jpg"/>
+  <meta property="og:image" content="https://hackersandslackers-cdn.storage.googleapis.com/2020/02/flaskblueprints-2@2x.jpg"/>
+  <meta property="og:image:width" content="1000"/>
+  <meta property="og:image:height" content="523"/>
   <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,500" rel="stylesheet">
   <link rel="stylesheet" href="https://use.typekit.net/sus7rlu.css">
   {% block pagestyles %}{% endblock %}
 </head>
 
-<body class="{{template}}">
+<body class="{{ template }}">
 
   {% block content %}{% endblock %}
 
