@@ -1,12 +1,10 @@
-"""Initialize app."""
+"""Initialize Flask app."""
 from flask import Flask
 
 
 def create_app():
     """Construct the core application."""
     app = Flask(__name__, instance_relative_config=False)
-
-    # Application Configuration
     app.config.from_object('config.Config')
 
     with app.app_context():
@@ -15,5 +13,10 @@ def create_app():
         from .main import main_routes
         app.register_blueprint(admin_routes.admin_bp)
         app.register_blueprint(main_routes.main_bp)
+        from .assets import compile_asset_bundles
+
+        # Compile static assets
+        if app.config['FLASK_ENV'] == 'development':
+            compile_asset_bundles(app)
 
         return app

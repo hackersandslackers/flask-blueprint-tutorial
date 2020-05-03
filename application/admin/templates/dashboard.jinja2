@@ -1,11 +1,12 @@
-{% extends "layout.html" %}
+{% extends "layout.jinja2" %}
 
 {% block pagestyles %}
   <link href="{{ url_for('static', filename='dist/css/landing.css') }}" rel="stylesheet" type="text/css">
 {% endblock %}
 
 {% block content %}
-{% include "navigation-default.html" %}
+{% include "navigation-loggedin.jinja2" %}
+
 <div class="container">
     <h1>{{body}}</h1>
     <ul class="page-properties">
@@ -14,5 +15,5 @@
       <li><span class="attribute-title">View:</span> <span class="attribute-value">{{ request.endpoint }}</span></li>
         <li><span class="attribute-title">Route:</span> <span class="attribute-value">{{ request.path }}</span></li>
     </ul>
-</div>
+  </div>
 {% endblock %}
