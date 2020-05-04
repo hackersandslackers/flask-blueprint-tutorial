@@ -9,15 +9,29 @@
 {% block content %}
   {% include "navigation.jinja2" %}
 
-<div class="container">
-    <h1>{{body}}</h1>
+  <div class="container">
+    <h1>{{ headline }}</h1>
+    <h2>{{ subtitle }}</h2>
 
-      <ul class="page-properties">
-        <li><span class="attribute-title">Blueprint:</span> <span class="attribute-value">{{ request.blueprint }}</span></li>
-        <li><span class="attribute-title">Template:</span> <span class="attribute-value">{{ self._TemplateReference__context.name }}</span></li>
-        <li><span class="attribute-title">View:</span> <span class="attribute-value">{{ request.endpoint }}</span></li>
-        <li><span class="attribute-title">Route:</span> <span class="attribute-value">{{ request.path }}</span></li>
-      </ul>
+    <div class="products">
+      {% for product in products %}
+        <a href="/product/{{ loop.index - 1 }}/" class="product-preview">
+          <img class="product-image" src="{{ product.image }}" alt="profile"/>
+          <div class="name">{{ product.name }}</div>
+          <div class="price">${{ product.salePrice }}</div>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
 
+
+  <div class="blueprint-info">
+    <h3>Blueprint Info</h3>
+    <ul class="page-properties">
+      <li><span class="attribute-title">Blueprint:</span> <span class="attribute-value">{{ request.blueprint }}</span></li>
+      <li><span class="attribute-title">Template:</span> <span class="attribute-value">{{ self._TemplateReference__context.name }}</span></li>
+      <li><span class="attribute-title">View:</span> <span class="attribute-value">{{ request.endpoint }}</span></li>
+      <li><span class="attribute-title">Route:</span> <span class="attribute-value">{{ request.path }}</span></li>
+    </ul>
   </div>
 {% endblock %}

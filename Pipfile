@@ -12,6 +12,8 @@ JSMin = "*"
 Flask = "*"
 Flask-Assets = "*"
 Python-Dotenv = "*"
+Faker = "*"
+Requests = "*"
 
 [requires]
 python_version = "3.8"

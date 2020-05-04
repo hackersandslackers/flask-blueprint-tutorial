@@ -1,26 +1,121 @@
-ul {
-  list-style: none;
-  width: 50%;
-  border: 1px solid #e6e6e6;
-  padding: 10px;
+@import 'variables.less';
 
-  li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #ececec;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
+.home-template {
 
-    &:last-of-type {
-      border-bottom: none;
-      margin-bottom: 0;
-      padding-bottom: 0;
+  &.page {
+    .products {
+      display: none !important;
     }
   }
 
-  .attribute-value {
-      font-weight: 300;
-      font-size: .9em;
+  .container {
+    .products {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 30px;
+
+      .product-preview {
+        padding: 3%;
+        box-shadow: 0 0 5px rgba(65, 67, 144, 0.15);
+        max-width: 26%;
+        width: 30%;
+        background: white;
+        margin-bottom: 20px;
+        display: block;
+        text-align: center;
+        transition: @transition;
+
+        &:hover {
+          background: #5dbad7;
+          color: white !important;
+          opacity: 1;
+
+          * {
+            color: white !important;
+          }
+        }
+
+        .product-image {
+          height: 150px;
+          margin: 0 auto 20px;
+          display: block;
+        }
+
+        .name {
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          display: -webkit-box;
+          width: -webkit-fill-available;
+          width: -moz-available;
+          width: stretch;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          width: 100%;
+          font-weight: 500;
+        }
+
+        .price {
+          color: #5f6988;
+          margin-top: 5px;
+          font-size: 1.1em;
+          font-weight: 600;
+        }
+      }
     }
+  }
+
+
+  .blueprint-info {
+    height: fit-content;
+    margin: 20px auto 0;
+    width: 968px;
+    background: white;
+    padding: 20px 30px;
+    box-shadow: 0 0 5px rgba(65, 67, 144, 0.15);
+
+    h3 {
+      margin: 0;
+      font-size: 1.4em;
+      font-weight: 500;
+    }
+
+    ul {
+      list-style: none;
+      border: 1px solid #e6e6e6;
+      padding: 10px;
+
+      li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ececec;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        font-size: 1.1em;
+
+        &:last-of-type {
+          border-bottom: none;
+          margin-bottom: 0;
+          padding-bottom: 0;
+        }
+
+        span {
+          font-weight: 500;
+          font-size: .9em;
+        }
+      }
+
+      .attribute-value {
+        font-weight: 300;
+        font-size: .9em;
+      }
+    }
+  }
+
+  h2 {
+    margin-bottom: 0 !important;
+  }
+
+
 }

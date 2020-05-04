@@ -19,6 +19,8 @@ keywords = ["Flask",
 python = "^3.8"
 flask = "*"
 flask-assets = "*"
+faker = "*"
+requests = "*"
 python-dotenv = "*"
 
 [tool.poetry.dev-dependencies]

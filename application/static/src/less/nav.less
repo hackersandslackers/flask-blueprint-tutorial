@@ -8,7 +8,7 @@ nav {
   box-shadow: 0 0 5px #bec6cf;
 
   .nav-wrapper {
-    max-width: 900px;
+    max-width: 1014px !important;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,15 +20,20 @@ nav {
       justify-content: space-between;
       align-items: center;
 
+      a {
+        margin-right: 40px;
+      }
+
       img {
         width: 30px;
         margin-right: 0;
       }
+    }
 
-      a {
-        margin-right: 40px;
-        font-weight: 400;
-      }
+    a {
+      font-weight: 600;
+      font-size: 1.1em;
+      color: #7b899a;
     }
   }
 
@@ -36,6 +41,7 @@ nav {
     color: #4d545d;
     transition: @transition;
     text-decoration: none;
+    font-size: 1.1em;
 
     &:hover {
       cursor: pointer;

@@ -4,14 +4,12 @@
       <a href="{{ url_for('home_bp.home') }}">
         <img src="{{ url_for('static', filename='img/logo.png') }}" alt="logo"/>
       </a>
-      {% if request.blueprint == 'home_bp' %}
         <a href="{{ url_for('home_bp.home') }}">Home</a>
         <a href="{{ url_for('home_bp.about') }}">About</a>
-        <a href="{{ url_for('home_bp.etc') }}">Etc</a>
-      {% endif %}
+        <a href="{{ url_for('home_bp.contact') }}">Etc</a>
     </div>
     <div class="right-nav">
-      {% if request.blueprint == 'home_bp' %}
+      {% if request.blueprint != 'account_bp' %}
         <a href="{{ url_for('account_bp.user_profile') }}">My Account</a>
       {% else %}
         <a href="{{ url_for('home_bp.home') }}">Logout</a>

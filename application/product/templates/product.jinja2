@@ -1,0 +1,27 @@
+{% extends "layout.jinja2" %}
+
+{% block pagestyles %}
+  {% assets "product_less_bundle" %}
+    <link href="{{ ASSET_URL }}" rel="stylesheet" type="text/css">
+  {% endassets %}
+{% endblock %}
+
+{% block content %}
+  {% include "navigation.jinja2" %}
+
+  <div class="container">
+    <h1 class="product-name">{{ product.name }}</h1>
+    <div class="product-flex">
+      <img class="product-image" src="{{ product.image }}" alt="profile">
+      <div class="product-details">
+        <div class="product-price meta"><span class="meta-name">Price:</span> <span>${{ product.salePrice }}</span></div>
+        <div class="product-review-average meta"><span class="meta-name">Rating:</span> <span>{{ product.customerReviewAverage }}/5</span></div>
+        <div class="product-review-count meta"><span class="meta-name"># Reviews:</span> <span>{{ product.customerReviewCount }}</span></div>
+        <div class="product-sku meta"><span class="meta-name">SKU:</span> {{ product.sku }}</div>
+        <p>{{ product.longDescription }}</p>
+        <button>BUY NOW!!!!</button>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
