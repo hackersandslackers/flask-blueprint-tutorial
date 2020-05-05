@@ -12,6 +12,8 @@
 
 Structure your Flask apps in a scalable and intelligent way using Blueprints. This repository contains source code for the accompanying tutorial on Hackers and Slackers: https://hackersandslackers.com/flask-blueprints/
 
+A live demo of this repository can be found here: https://flaskblueprints.hackersandslackers.app/
+
 
 ## Installation
 
