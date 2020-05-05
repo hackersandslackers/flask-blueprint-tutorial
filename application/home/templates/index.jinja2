@@ -15,7 +15,7 @@
 
     <div class="products">
       {% for product in products %}
-        <a href="/product/{{ loop.index - 1 }}/" class="product-preview">
+        <a href="/products/{{ loop.index - 1 }}/" class="product-preview">
           <img class="product-image" src="{{ product.image }}" alt="profile"/>
           <div class="name">{{ product.name }}</div>
           <div class="price">${{ product.salePrice }}</div>

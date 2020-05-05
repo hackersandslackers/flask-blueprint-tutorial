@@ -1,4 +1,4 @@
-"""Routes for logged-in account profile."""
+"""Routes for logged-in profile."""
 from flask import Blueprint, render_template
 from faker import Faker
 fake = Faker()

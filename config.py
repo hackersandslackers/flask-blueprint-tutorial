@@ -7,7 +7,7 @@ load_dotenv(path.join(basedir, '.env'))
 
 
 class Config:
-    """Set Flask configuration from environment variables."""
+    """Configuration from environment variables."""
 
     SECRET_KEY = environ.get('SECRET_KEY')
     FLASK_ENV = environ.get('FLASK_ENV')
@@ -23,4 +23,5 @@ class Config:
     TEMPLATES_FOLDER = 'templates'
     COMPRESSOR_DEBUG = True
 
+    # API
     BEST_BUY_API_KEY = environ.get('BEST_BUY_API_KEY')

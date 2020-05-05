@@ -1,8 +1,9 @@
+"""Source app with worthless data."""
 import requests
 
 
-def list_products(app):
-    """Grab six random products from BestBuy."""
+def fetch_products(app):
+    """Grab product listings from BestBuy."""
     endpoint = "https://api.bestbuy.com/v1/products(customerReviewAverage>=4&customerReviewCount>100&longDescription=*)"
     params = {
         'show': "customerReviewAverage,customerReviewCount,name,sku,image,description,manufacturer,longDescription,salePrice,sku",

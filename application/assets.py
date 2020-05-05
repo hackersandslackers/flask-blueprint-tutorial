@@ -1,9 +1,9 @@
-"""Compile static assets for app."""
+"""Compile static assets."""
 from flask_assets import Environment, Bundle
 
 
 def compile_static_assets(app):
-    """Create stylesheets."""
+    """Create stylesheet bundles."""
     assets = Environment(app)
     Environment.auto_build = True
     Environment.debug = False
@@ -19,9 +19,9 @@ def compile_static_assets(app):
                               filters='less,cssmin',
                               output='dist/css/home.css',
                               extra={'rel': 'stylesheet/less'})
-    product_less_bundle = Bundle('product_bp/less/product.less',
+    product_less_bundle = Bundle('products_bp/less/products.less',
                                  filters='less,cssmin',
-                                 output='dist/css/product.css',
+                                 output='dist/css/products.css',
                                  extra={'rel': 'stylesheet/less'})
     assets.register('common_less_bundle', common_less_bundle)
     assets.register('account_less_bundle', account_less_bundle)
