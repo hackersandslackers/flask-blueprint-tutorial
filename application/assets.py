@@ -2,9 +2,8 @@
 from flask_assets import Environment, Bundle
 
 
-def compile_static_assets(app):
+def compile_static_assets(assets):
     """Create stylesheet bundles."""
-    assets = Environment(app)
     Environment.auto_build = True
     Environment.debug = False
     common_less_bundle = Bundle('src/less/*.less',

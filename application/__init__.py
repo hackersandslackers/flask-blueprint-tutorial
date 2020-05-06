@@ -1,11 +1,14 @@
 """Initialize Flask app."""
 from flask import Flask
+from flask_assets import Environment
 
 
 def create_app():
     """Create Flask application."""
     app = Flask(__name__, instance_relative_config=False)
     app.config.from_object('config.Config')
+
+    assets = Environment(app)
 
     with app.app_context():
         # Import parts of our application
@@ -20,6 +23,6 @@ def create_app():
 
         # Compile static assets
         if app.config['FLASK_ENV'] == 'development':
-            compile_static_assets(app)
+            compile_static_assets(assets)
 
         return app
