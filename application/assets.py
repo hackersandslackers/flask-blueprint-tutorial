@@ -30,3 +30,4 @@ def compile_static_assets(assets):
     account_less_bundle.build()
     home_less_bundle.build()
     product_less_bundle.build()
+    return assets

@@ -7,8 +7,8 @@ def create_app():
     """Create Flask application."""
     app = Flask(__name__, instance_relative_config=False)
     app.config.from_object('config.Config')
-
-    assets = Environment(app)
+    assets = Environment()
+    assets.init_app(app)
 
     with app.app_context():
         # Import parts of our application
