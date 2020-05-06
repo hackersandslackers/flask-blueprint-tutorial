@@ -11,12 +11,18 @@ html {
   color: #5f6988;
 
   .container {
-    max-width: 948px;
+    width: 948px;
+    max-width: 88%;
     margin: 0 auto;
     height: fit-content;
     background: white;
     padding: 30px 40px;
     box-shadow: 0 0 5px rgba(65, 67, 144, 0.15);
+    @media(max-width: 800px) {
+      width: 82%;
+      margin: 0 auto;
+      padding: 30px 6%;
+    }
 
     h1 {
       line-height: 1;

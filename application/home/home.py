@@ -6,7 +6,7 @@ from application.api import fetch_products
 # Blueprint Configuration
 home_bp = Blueprint('home_bp', __name__,
                     template_folder='templates',
-                    static_folder='static', url_prefix='')
+                    static_folder='static')
 
 
 @home_bp.route('/', methods=['GET'])
@@ -15,7 +15,7 @@ def home():
     products = fetch_products(app)
     return render_template('index.jinja2',
                            title='Flask Blueprint Tutorial',
-                           subtitle='My Fake Ecommerce Store',
+                           subtitle='Demonstration of Flask blueprints in action.',
                            template='home-template',
                            products=products)
 

@@ -6,7 +6,7 @@ fake = Faker()
 # Blueprint Configuration
 account_bp = Blueprint('account_bp', __name__,
                        template_folder='templates',
-                       static_folder='./static')
+                       static_folder='static')
 
 
 @account_bp.route('/profile', methods=['GET'])
