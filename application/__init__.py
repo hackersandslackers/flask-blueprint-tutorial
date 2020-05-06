@@ -22,7 +22,6 @@ def create_app():
         app.register_blueprint(products.product_bp)
 
         # Compile static assets
-        if app.config['FLASK_ENV'] == 'development':
-            compile_static_assets(assets)
+        compile_static_assets(assets)
 
         return app
