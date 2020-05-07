@@ -45,6 +45,7 @@ Configuration is handled by creating a **.env** file. This should contain the fo
 ```.env
 SECRET_KEY="YOURSECRETKEY"
 FLASK_ENV="production"
+BEST_BUY_API_KEY="YOURBESTBUYAPIKEY"
 ```
 -----
 
