@@ -12,6 +12,7 @@
   <div class="container">
     <div class="account-header">
       <img class="user-avatar" src="{{ url_for('static', filename='img/avatar.png') }}" alt="profile">
+
       <div class="account-details">
         <div class="user-personal-info">
           <h1 class="username">{{ user.username }}</h1>
@@ -22,8 +23,8 @@
             <div class="user-location meta"><span class="meta-name">Birthday:</span> <span>{{ user.birthdate }}</span></div>
             <a href="{{ user.website }}">{{ user.website }}</a></div>
         </div>
-
       </div>
+
     </div>
     <p class="user-bio">{{ user.bio }}</p>
   </div>
