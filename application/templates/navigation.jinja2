@@ -9,8 +9,8 @@
         <a href="{{ url_for('home_bp.contact') }}">Contact</a>
     </div>
     <div class="right-nav">
-      {% if request.blueprint != 'account_bp' %}
-        <a href="{{ url_for('account_bp.user_profile') }}">My Account</a>
+      {% if request.blueprint != 'profile_bp' %}
+        <a href="{{ url_for('profile_bp.user_profile') }}">My Account</a>
       {% else %}
         <a href="{{ url_for('home_bp.home') }}">Logout</a>
       {% endif %}

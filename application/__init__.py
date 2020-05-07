@@ -17,7 +17,8 @@ def create_app():
         from .products import products
         from .assets import compile_static_assets
 
-        app.register_blueprint(profile.account_bp)
+        # Register Blueprints
+        app.register_blueprint(profile.profile_bp)
         app.register_blueprint(home.home_bp)
         app.register_blueprint(products.product_bp)
 
