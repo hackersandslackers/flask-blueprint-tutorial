@@ -15,6 +15,7 @@ def product_page(product_id):
     product = fetch_products(app)[product_id]
     return render_template(
         'products.jinja2',
+        title=product['name'],
         product=product,
         template='profile-template'
     )
