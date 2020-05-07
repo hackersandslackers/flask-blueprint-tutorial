@@ -47,6 +47,59 @@ html {
       }
     }
   }
+
+  .blueprint-info {
+    height: fit-content;
+    margin: 20px auto 0;
+    width: 968px;
+    max-width: 88%;
+    background: white;
+    padding: 20px 30px;
+    box-shadow: 0 0 5px rgba(65, 67, 144, 0.15);
+    @media (max-width: 800px) {
+      width: 82%;
+      margin: 0 auto;
+      padding: 30px 6%;
+    }
+
+    h3 {
+      margin: 0;
+      font-size: 1.4em;
+      font-weight: 500;
+    }
+
+    ul {
+      list-style: none;
+      border: 1px solid #e6e6e6;
+      padding: 10px;
+
+      li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ececec;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        font-size: 1.1em;
+
+        &:last-of-type {
+          border-bottom: none;
+          margin-bottom: 0;
+          padding-bottom: 0;
+        }
+
+        span {
+          font-weight: 500;
+          font-size: .9em;
+        }
+      }
+
+      .attribute-value {
+        font-weight: 300;
+        font-size: .9em;
+      }
+    }
+  }
 }
 
 
