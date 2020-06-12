@@ -1,12 +1,15 @@
 """Product pages."""
 from flask import Blueprint, render_template
 from flask import current_app as app
-from application.api import fetch_products
+from flask_blueprint_tutorial.api import fetch_products
+
 
 # Blueprint Configuration
-product_bp = Blueprint('products_bp', __name__,
-                       template_folder='templates',
-                       static_folder='static')
+product_bp = Blueprint(
+    'products_bp', __name__,
+    template_folder='templates',
+    static_folder='static'
+)
 
 
 @product_bp.route('/products/<int:product_id>/', methods=['GET'])

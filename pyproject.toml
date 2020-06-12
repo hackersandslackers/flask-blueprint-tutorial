@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "Flask Blueprint Tutorial"
+name = "flask_blueprint_tutorial"
 version = "0.1.0"
 description = "Structure your Flask apps in a scalable and intelligent way using Blueprints."
 authors = ["Todd Birchard <toddbirchard@gmail.com>"]
@@ -18,7 +18,7 @@ keywords = ["Flask",
 [tool.poetry.dependencies]
 python = "^3.8"
 flask = "*"
-flask-assets = "*"
+flask_assets = "*"
 faker = "*"
 requests = "*"
 python-dotenv = "*"

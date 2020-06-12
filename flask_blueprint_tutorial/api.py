@@ -13,6 +13,6 @@ def fetch_products(app):
         "totalPages": 1,
         "sort": "customerReviewAverage.dsc"}
     headers = {'Accept': 'application/json', 'Content-Type': 'application/json'}
-    r = requests.get(endpoint, params=params, headers=headers)
-    products = r.json()['products']
+    req = requests.get(endpoint, params=params, headers=headers)
+    products = req.json()['products']
     return products

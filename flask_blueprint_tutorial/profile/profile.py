@@ -4,9 +4,11 @@ from faker import Faker
 fake = Faker()
 
 # Blueprint Configuration
-profile_bp = Blueprint('profile_bp', __name__,
-                       template_folder='templates',
-                       static_folder='static')
+profile_bp = Blueprint(
+    'profile_bp', __name__,
+    template_folder='templates',
+    static_folder='static'
+)
 
 
 @profile_bp.route('/profile', methods=['GET'])
