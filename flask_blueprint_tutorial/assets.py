@@ -4,12 +4,7 @@ from flask_assets import Bundle
 
 
 def compile_static_assets(assets):
-    """
-    Create stylesheet bundles.
-
-    :param assets: Flask-Assets Environment
-    :type assets: Environment
-    """
+    """Create stylesheet bundles."""
     assets.auto_build = True
     assets.debug = False
     common_less_bundle = Bundle(
@@ -40,7 +35,7 @@ def compile_static_assets(assets):
     assets.register('home_less_bundle', home_less_bundle)
     assets.register('profile_less_bundle', profile_less_bundle)
     assets.register('product_less_bundle', product_less_bundle)
-    if app.config['FLASK_ENV'] == 'development':  # Only rebuild in development
+    if app.config['FLASK_ENV'] == 'development':
         common_less_bundle.build()
         home_less_bundle.build()
         profile_less_bundle.build()
