@@ -40,6 +40,16 @@ $ pipenv update
 $ flask run
 ```
 
+**Installation via [Poetry](https://python-poetry.org/)**:
+
+```shell
+$ git clone https://github.com/hackersandslackers/flask-blueprint-tutorial.git
+$ cd flask-blueprint-tutorial
+$ poetry shell
+$ poetry update
+$ poetry run
+```
+
 ## Usage
 
 Replace the values in **.env.example** with your values and rename this file to **.env**:
