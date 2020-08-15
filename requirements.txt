@@ -81,7 +81,7 @@ testpath==0.4.2
 tornado==5.1.1
 traitlets==4.3.2
 urllib3==1.25.6
-wcwidth==0.1.7
+wcwidth==0.2.5
 webencodings==0.5.1
 whaaaaat==0.5.2
 wrapt==1.12.1
