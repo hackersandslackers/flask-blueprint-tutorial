@@ -52,7 +52,7 @@ pickleshare==0.7.5
 pluggy==0.8.0
 prometheus-client==0.6.0
 prompt-toolkit==1.0.14
-psutil==5.6.1
+psutil==5.6.6
 ptyprocess==0.6.0
 pycodestyle==2.4.0
 pydocstyle==3.0.0
