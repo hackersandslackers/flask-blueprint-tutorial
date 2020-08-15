@@ -5,7 +5,7 @@ autopep8==1.4.2
 backports-abc==0.5
 backports.functools-lru-cache==1.6.1
 backports.shutil-get-terminal-size==1.0.0
-bleach==3.1.0
+bleach==3.1.4
 certifi==2019.9.11
 chardet==3.0.4
 configparser==3.5.0
