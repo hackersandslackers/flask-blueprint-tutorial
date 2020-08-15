@@ -9,7 +9,7 @@ bleach==3.1.4
 certifi==2019.9.11
 chardet==3.0.4
 configparser==3.5.0
-coverage==4.5.4
+coverage==5.2.1
 decorator==4.4.0
 defusedxml==0.5.0
 devstack-tools==0.4.0
