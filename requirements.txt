@@ -33,7 +33,7 @@ jsonschema==3.0.1
 jupyter-client==5.2.4
 jupyter-core==4.4.0
 jupyterlab-git==0.5.0
-lazy-object-proxy==1.4.3
+lazy-object-proxy==1.5.1
 MarkupSafe==1.1.1
 mccabe==0.6.1
 mistune==0.8.4
