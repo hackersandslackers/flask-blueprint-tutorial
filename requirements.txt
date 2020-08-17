@@ -55,7 +55,7 @@ prompt-toolkit==1.0.14
 psutil==5.6.6
 ptyprocess==0.6.0
 pycodestyle==2.4.0
-pydocstyle==3.0.0
+pydocstyle==5.0.2
 pyflakes==2.0.0
 Pygments==2.3.1
 pylama==7.7.1
