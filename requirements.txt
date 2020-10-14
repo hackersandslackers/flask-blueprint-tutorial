@@ -7,7 +7,7 @@ Faker==4.1.2
 Flask==1.1.2
 Flask-Assets==2.0
 idna==2.10
-iniconfig==1.0.1
+iniconfig==1.1.1
 itsdangerous==1.1.0
 Jinja2==2.11.2
 jsmin==2.2.2
