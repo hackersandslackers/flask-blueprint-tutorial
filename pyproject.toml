@@ -24,6 +24,7 @@ flask_assets = "*"
 faker = "*"
 requests = "*"
 python-dotenv = "*"
+uwsgi = "^2.0.19"
 
 [tool.poetry.dev-dependencies]
 lesscpy = "*"
