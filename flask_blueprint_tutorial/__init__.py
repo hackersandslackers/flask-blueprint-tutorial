@@ -3,19 +3,19 @@ from flask import Flask
 from flask_assets import Environment
 
 
-def create_app():
+def init_app():
     """Create Flask application."""
     app = Flask(__name__, instance_relative_config=False)
-    app.config.from_object('config.Config')
+    app.config.from_object("config.Config")
     assets = Environment()
     assets.init_app(app)
 
     with app.app_context():
         # Import parts of our application
-        from .profile import profile
+        from .assets import compile_static_assets
         from .home import home
         from .products import products
-        from .assets import compile_static_assets
+        from .profile import profile
 
         # Register Blueprints
         app.register_blueprint(profile.profile_bp)

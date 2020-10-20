@@ -13,44 +13,14 @@
 Structure your Flask apps in a scalable and intelligent way using Blueprints.
 
 This repository contains source code for the accompanying tutorial on Hackers and Slackers: https://hackersandslackers.com/flask-blueprints/
-
 A live demo of this repository can be found here: https://flaskblueprints.hackersandslackers.app/
 
 
-## Installation
+# Installation
 
-**Installation via `requirements.txt`**:
+Get running locally in two steps:
 
-```shell
-$ git clone https://github.com/hackersandslackers/flask-blueprint-tutorial.git
-$ cd flask-blueprint-tutorial
-$ python3 -m venv myenv
-$ source myenv/bin/activate
-$ pip3 install -r requirements.txt
-$ flask run
-```
-
-**Installation via [Pipenv](https://pipenv-fork.readthedocs.io/en/latest/)**:
-
-```shell
-$ git clone https://github.com/hackersandslackers/flask-blueprint-tutorial.git
-$ cd flask-blueprint-tutorial
-$ pipenv shell
-$ pipenv update
-$ flask run
-```
-
-**Installation via [Poetry](https://python-poetry.org/)**:
-
-```shell
-$ git clone https://github.com/hackersandslackers/flask-blueprint-tutorial.git
-$ cd flask-blueprint-tutorial
-$ poetry shell
-$ poetry update
-$ poetry run
-```
-
-## Usage
+## Environment Variables
 
 Replace the values in **.env.example** with your values and rename this file to **.env**:
 
@@ -64,6 +34,16 @@ Replace the values in **.env.example** with your values and rename this file to 
 
 
 *Remember never to commit secrets saved in .env files to Github.*
+
+## Installation
+
+Get up and running with `make deploy`:
+
+```shell
+$ git clone https://github.com/hackersandslackers/flask-blueprint-tutorial.git
+$ cd flask-blueprint-tutorial
+$ make deploy
+``` 
 
 -----
 
