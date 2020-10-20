@@ -12,30 +12,30 @@
 
 Structure your Flask apps in a scalable and intelligent way using Blueprints.
 
-This repository contains source code for the accompanying tutorial on Hackers and Slackers: https://hackersandslackers.com/flask-blueprints/
-A live demo of this repository can be found here: https://flaskblueprints.hackersandslackers.app/
+**Tutorial**: https://hackersandslackers.com/flask-blueprints/
+**Demo**: https://flaskblueprints.hackersandslackers.app/
 
 
-# Installation
+# Getting Started
 
-Get running locally in two steps:
+Get set up locally in two steps:
 
-## Environment Variables
+### Environment Variables
 
 Replace the values in **.env.example** with your values and rename this file to **.env**:
 
-* `FLASK_APP`: Entry point of your application (should be `wsgi.py`).
-* `FLASK_ENV`: The environment to run your app in (either `development` or `production`).
+* `FLASK_APP`: Entry point of your application; should be `wsgi.py`.
+* `FLASK_ENV`: The environment in which to run your application; either `development` or `production`.
 * `SECRET_KEY`: Randomly generated string of characters used to encrypt your app's data.
-* `LESS_BIN`: Path to your local LESS installation via `which lessc` (optional for static assets).
-* `ASSETS_DEBUG`: Debug asset creation and bundling in `development` (optional).
-* `LESS_RUN_IN_DEBUG`: Debug LESS while in `development` (optional).
-* `COMPRESSOR_DEBUG`: Debug asset compression while in `development` (optional).
+* `LESS_BIN` *(optional for static assets)*: Path to your local LESS installation via `which lessc`.
+* `ASSETS_DEBUG` *(optional)*: Debug asset creation and bundling in `development`.
+* `LESS_RUN_IN_DEBUG` *(optional)*: Debug LESS while in `development`.
+* `COMPRESSOR_DEBUG` *(optional)*: Debug asset compression while in `development`.
 
 
 *Remember never to commit secrets saved in .env files to Github.*
 
-## Installation
+### Installation
 
 Get up and running with `make deploy`:
 
