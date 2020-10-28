@@ -9,7 +9,7 @@ itsdangerous==1.1.0
 jinja2==2.11.2
 markupsafe==1.1.1
 python-dateutil==2.8.1
-python-dotenv==0.14.0
+python-dotenv==0.15.0
 requests==2.24.0
 six==1.15.0
 text-unidecode==1.3
