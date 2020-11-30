@@ -12,8 +12,8 @@
 
 Structure your Flask apps in a scalable and intelligent way using Blueprints.
 
-**Tutorial**: https://hackersandslackers.com/flask-blueprints/
-**Demo**: https://flaskblueprints.hackersandslackers.app/
+* **Tutorial**: https://hackersandslackers.com/flask-blueprints/
+* **Demo**: https://flaskblueprints.hackersandslackers.app/
 
 
 # Getting Started

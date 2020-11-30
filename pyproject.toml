@@ -39,6 +39,7 @@ run = "wsgi:app"
 
 [tool.poetry.urls]
 issues = "https://github.com/hackersandslackers/flask-blueprint-tutorial/issues"
+
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
