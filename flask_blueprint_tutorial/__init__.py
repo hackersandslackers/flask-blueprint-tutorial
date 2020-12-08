@@ -1,6 +1,10 @@
 """Initialize Flask app."""
 from flask import Flask
 from flask_assets import Environment
+from ddtrace import patch_all
+
+
+patch_all()
 
 
 def init_app():
