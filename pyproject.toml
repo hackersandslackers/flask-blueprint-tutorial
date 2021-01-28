@@ -25,7 +25,7 @@ faker = "*"
 requests = "*"
 python-dotenv = "*"
 uwsgi = "^2.0.19"
-ddtrace = "^0.44.0"
+ddtrace = "^0.46.0"
 
 [tool.poetry.dev-dependencies]
 lesscpy = "*"
