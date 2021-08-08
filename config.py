@@ -24,5 +24,8 @@ class Config:
     TEMPLATES_FOLDER = "templates"
     COMPRESSOR_DEBUG = True
 
+    # Datadog
+    DD_SERVICE = environ.get("DD_SERVICE")
+
     # API
     BEST_BUY_API_KEY = environ.get("BEST_BUY_API_KEY")
