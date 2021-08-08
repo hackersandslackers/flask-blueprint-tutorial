@@ -71,5 +71,5 @@ clean:
 	find . -wholename '.pytest_cache' -delete
 	find . -wholename '**/.pytest_cache' -delete
 	find . -wholename './logs/*.json' -delete
-	find . -wholename '.webassets-cache/*' -delete
+	find . -wholename '**/.webassets-cache/' -delete
 	find . -wholename './logs' -delete
