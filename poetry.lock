@@ -108,7 +108,7 @@ opentracing = ["opentracing (>=2.0.0)"]
 
 [[package]]
 name = "faker"
-version = "13.3.0"
+version = "13.3.3"
 description = "Faker is a Python package that generates fake data for you."
 category = "main"
 optional = false
@@ -606,8 +606,8 @@ ddtrace = [
     {file = "ddtrace-0.58.5.tar.gz", hash = "sha256:3e1d36938de39b5283014b50b4e6af3233611419fdbf38f5496369ebd5a97257"},
 ]
 faker = [
-    {file = "Faker-13.3.0-py3-none-any.whl", hash = "sha256:7e878365aaf2f6a3f88a689c5f8209b8b93f45e3e9c991272552553006856637"},
-    {file = "Faker-13.3.0.tar.gz", hash = "sha256:618b140c77475786dbe3a5409ad53521cb76746ab7a5c77b99c663f3ef1b1bc2"},
+    {file = "Faker-13.3.3-py3-none-any.whl", hash = "sha256:85ed0cb379e3b7414bdb6b484994beaf9bddc74472c8c35f743c16cf5fc0c314"},
+    {file = "Faker-13.3.3.tar.gz", hash = "sha256:5536ceb63380f0d598c026b7c330c17d719a19d1a495e9397ee8f5259420a696"},
 ]
 flake8 = [
     {file = "flake8-4.0.1-py2.py3-none-any.whl", hash = "sha256:479b1304f72536a55948cb40a32dce8bb0ffe3501e26eaf292c7e60eb5e0428d"},
