@@ -24,17 +24,16 @@ flask_assets = "*"
 faker = "*"
 requests = "*"
 python-dotenv = "*"
-uwsgi = "^2.0.19"
-ddtrace = "^0.58.1"
+uwsgi = "*"
 
 [tool.poetry.dev-dependencies]
 lesscpy = "*"
 cssmin = "*"
 jsmin = "*"
 pytest = "*"
-black = "^22.1"
+black = "*"
 isort = "*"
-flake8 = "^4.0.0"
+flake8 = "*"
 
 [tool.poetry.scripts]
 run = "wsgi:app"

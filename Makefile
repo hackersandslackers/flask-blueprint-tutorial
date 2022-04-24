@@ -3,25 +3,37 @@ VIRTUAL_ENVIRONMENT := $(CURDIR)/.venv
 LOCAL_PYTHON := $(VIRTUAL_ENVIRONMENT)/bin/python3
 
 define HELP
-Manage $(PROJECTNAME). Usage:
+Manage $(PROJECT_NAME). Usage:
 
 make run        - Run $(PROJECT_NAME).
-make install    - Create virtual env, & install dependencies.
-make update     - Update pip dependencies via Poetry and output requirements.txt.
-make format     - Format code with Python's `Black` library.
-make lint       - Check code formatting with flake8.
+make install    - Create virtual env, install dependencies, and run project.
+make deploy     - Install and run script by running `make install` and `make run` in succession.
+make update     - Update pip dependencies via Poetry and export output to requirements.txt.
+make format     - Format code with Pythons `Black` library.
+make lint       - Check code formatting with `flake8`.
 make clean      - Remove cached files and lock files.
+
 endef
 export HELP
 
-.PHONY: run install update format lint clean help
+
+.PHONY: run install deploy update format lint clean help
+
+requirements: .requirements.txt
+env: ./.venv/bin/activate
 
 
-env: .venv/bin/python3
+.requirements.txt: requirements.txt
+	$(shell . .venv/bin/activate && pip install -r requirements.txt)
 
 
 all help:
 	@echo "$$HELP"
+
+
+.PHONY: run
+run: env
+	flask run
 
 
 .PHONY: install
@@ -32,9 +44,10 @@ install:
 	$(LOCAL_PYTHON) -m pip install -r requirements.txt
 
 
-.PHONY: run
-run: env
-	$(shell . .venv/bin/activate && flask run)
+.PHONY: deploy
+deploy:
+	make install
+	make run
 
 
 .PHONY: update
@@ -65,11 +78,12 @@ clean:
 	find . -name '*.pyc' -delete
 	find . -name '__pycache__' -delete
 	find . -name 'poetry.lock' -delete
-	find . -name 'Pipefile.lock' -delete
 	find . -name '*.log' -delete
+	find . -name '.DS_Store' -delete
 	find . -wholename 'logs/*.json' -delete
 	find . -wholename '.pytest_cache' -delete
 	find . -wholename '**/.pytest_cache' -delete
 	find . -wholename './logs/*.json' -delete
-	find . -wholename '**/.webassets-cache/' -delete
 	find . -wholename './logs' -delete
+	find . -wholename '*.html' -delete
+	find . -wholename '**/.webassets-cache'  -delete

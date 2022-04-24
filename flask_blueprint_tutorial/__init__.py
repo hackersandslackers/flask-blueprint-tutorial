@@ -1,12 +1,8 @@
 """Initialize Flask app."""
-from ddtrace import patch_all
 from flask import Flask
 from flask_assets import Environment
 
 from config import Config
-
-if Config.FLASK_ENV == "production" and Config.DD_SERVICE:
-    patch_all()
 
 
 def init_app():
