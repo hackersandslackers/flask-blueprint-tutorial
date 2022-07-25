@@ -17,5 +17,5 @@ six==1.16.0; python_version >= "3.6" and python_full_version < "3.0.0" or python
 urllib3==1.26.9; python_version >= "2.7" and python_full_version < "3.0.0" or python_full_version >= "3.6.0" and python_version < "4"
 uwsgi==2.0.20
 webassets==2.0
-werkzeug==2.1.1; python_version >= "3.7"
+werkzeug==2.2.0; python_version >= "3.7"
 zipp==3.8.0; python_version < "3.10" and python_version >= "3.7"
