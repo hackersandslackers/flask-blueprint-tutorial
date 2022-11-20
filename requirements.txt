@@ -6,7 +6,7 @@ faker==13.4.0; python_version >= "3.6"
 flask-assets==2.0
 flask==2.1.1; python_version >= "3.7"
 idna==3.3; python_version >= "3.5" and python_full_version < "3.0.0" or python_full_version >= "3.6.0" and python_version >= "3.5"
-importlib-metadata==4.11.3; python_version < "3.10" and python_version >= "3.7"
+importlib-metadata==4.13.0; python_version < "3.10" and python_version >= "3.7"
 itsdangerous==2.1.2; python_version >= "3.7"
 jinja2==3.1.1; python_version >= "3.7"
 markupsafe==2.1.1; python_version >= "3.7"
