@@ -99,11 +99,12 @@ venv.bak/
 # mkdocs documentation
 /site
 
-# mypy
+# MyPy
 .mypy_cache/
 
-# DS Store
-.DS_Store
-
-# Pycharm
+# IDEs
 .idea
+.vscode
+
+# Etc
+.DS_Store

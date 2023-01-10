@@ -11,7 +11,7 @@ class Config:
     """Configuration from environment variables."""
 
     SECRET_KEY = environ.get("SECRET_KEY")
-    FLASK_ENV = environ.get("FLASK_ENV")
+    FLASK_ENV = environ.get("FLASK_DEBUG")
     FLASK_APP = "wsgi.py"
 
     # Flask-Assets
