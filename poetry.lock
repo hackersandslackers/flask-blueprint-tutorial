@@ -523,13 +523,13 @@ socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 
 [[package]]
 name = "uwsgi"
-version = "2.0.17"
+version = "2.0.21"
 description = "The uWSGI server"
 category = "main"
 optional = false
 python-versions = "*"
 files = [
-    {file = "uwsgi-2.0.17.tar.gz", hash = "sha256:3dc2e9b48db92b67bfec1badec0d3fdcc0771316486c5efa3217569da3528bf2"},
+    {file = "uwsgi-2.0.21.tar.gz", hash = "sha256:35a30d83791329429bc04fe44183ce4ab512fcf6968070a7bfba42fc5a0552a9"},
 ]
 
 [[package]]
@@ -581,4 +581,4 @@ testing = ["flake8 (<5)", "func-timeout", "jaraco.functools", "jaraco.itertools"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "eb03a2c32f6de86abeebb2d158e7eb09be8120bc2a69cd271d8bd5c0e3721478"
+content-hash = "186c74d1c1f5e5ff8e7cc9713efaaaced6a06b7defbea6f292ebc48d67084c83"
