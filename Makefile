@@ -19,13 +19,10 @@ export HELP
 
 .PHONY: run install deploy update format lint clean help
 
-
 all help:
 	@echo "$$HELP"
 
-
 env: $(VIRTUAL_ENV)
-
 
 $(VIRTUAL_ENV):
 	if [ ! -d $(VIRTUAL_ENV) ]; then \
@@ -33,25 +30,24 @@ $(VIRTUAL_ENV):
 		python3 -m venv $(VIRTUAL_ENV); \
 	fi
 
+.PHONY: dev
+dev: env
+	$(LOCAL_PYTHON) -m main --reload
 
 .PHONY: run
 run: env
-	uwsgi --http 127.0.0.1:8081 --master --module wsgi:app --processes 4 --threads 2
-
+	  $(LOCAL_PYTHON) -m main
 
 .PHONY: install
 install: env
 	$(LOCAL_PYTHON) -m pip install --upgrade pip setuptools wheel && \
-	$(LOCAL_PYTHON) -m pip install --no-cache-dir uwsgi && \
 	$(LOCAL_PYTHON) -m pip install -r requirements.txt && \
 	echo Installed dependencies in \`${VIRTUAL_ENV}\`;
 
-
 .PHONY: deploy
 deploy:
-	make install
+	make install && \
 	make run
-
 
 .PHONY: test
 test: env
@@ -61,7 +57,6 @@ test: env
 		coverage html --title='Coverage Report' -d .reports && \
 		open .reports/index.html
 
-
 .PHONY: update
 update: env
 	$(LOCAL_PYTHON) -m pip install --upgrade pip setuptools wheel && \
@@ -69,12 +64,10 @@ update: env
 	poetry export -f requirements.txt --output requirements.txt --without-hashes && \
 	echo Installed dependencies in \`${VIRTUAL_ENV}\`;
 
-
 .PHONY: format
 format: env
-	$(LOCAL_PYTHON) -m isort --multi-line=3 .
+	$(LOCAL_PYTHON) -m isort --multi-line=3 . && \
 	$(LOCAL_PYTHON) -m black .
-
 
 .PHONY: lint
 lint: env
@@ -84,22 +77,15 @@ lint: env
 			--show-source \
 			--statistics
 
-
 .PHONY: clean
 clean:
 	find . -name 'poetry.lock' -delete && \
 	find . -name '.coverage' -delete && \
-	find . -name '*.pyc' -delete \
-	find . -name '__pycache__' -delete \
-	find . -name 'poetry.lock' -delete \
-	find . -name '*.log' -delete \
-	find . -name '.DS_Store' -delete \
+	find . -name '.Pipfile.lock' -delete && \
 	find . -wholename '**/*.pyc' -delete && \
-	find . -wholename '*.html' -delete && \
 	find . -type d -wholename '__pycache__' -exec rm -rf {} + && \
-	find . -type d -wholename '.venv' -exec rm -rf {} + && \
+	find . -type d -wholename './.venv' -exec rm -rf {} + && \
 	find . -type d -wholename '.pytest_cache' -exec rm -rf {} + && \
 	find . -type d -wholename '**/.pytest_cache' -exec rm -rf {} + && \
-	find . -type d -wholename './logs/*' -exec rm -rf {} + && \
-	find . -type d -wholename './.reports/*' -exec rm -rf {} + && \
-	find . -type d -wholename '**/.webassets-cache' -exec rm -rf {} +
+	find . -type d -wholename './logs/*.log' -exec rm -rf {} + && \
+	find . -type d -wholename './.reports/*' -exec rm -rf {} +

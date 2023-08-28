@@ -9,22 +9,16 @@ readme = "README.md"
 homepage = "https://hackersandslackers.com/flask-blueprints/"
 repository = "https://github.com/hackersandslackers/flask-blueprint-tutorial/"
 documentation = "https://hackersandslackers.com/flask-blueprints/"
-keywords = [
-    "Flask",
-    "Blueprints",
-    "Framework",
-    "Python",
-    "Tutorial"
-]
+keywords = ["Flask", "Flask-Blueprints", "Framework", "Python", "Tutorial"]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.10,<4"
 flask = "*"
 flask_assets = "*"
 faker = "*"
 requests = "*"
 python-dotenv = "*"
-uwsgi = "2.0.17"
+uwsgi = "*"
 lesscpy = "*"
 cssmin = "*"
 jsmin = "*"
@@ -33,17 +27,17 @@ isort = "*"
 flake8 = "*"
 
 [tool.poetry.scripts]
-run = "wsgi:app"
+run = "main:app"
 
 [tool.poetry.urls]
 issues = "https://github.com/hackersandslackers/flask-blueprint-tutorial/issues"
 
 [build-system]
-requires = ["poetry>=1.3.1"]
-build-backend = "poetry.masonry.api"
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
 
 [tool.pylint.'MESSAGES CONTROL']
-disable="C0103,C0301,W0703,W0621"
+disable = "C0103,C0301,W0703,W0621"
 
 [tool.black]
 line-length = 120
