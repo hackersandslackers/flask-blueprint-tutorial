@@ -6,14 +6,12 @@ from flask import render_template
 from flask_blueprint_tutorial.api import fetch_products
 
 # Blueprint Configuration
-home_bp = Blueprint(
-    "home_bp", __name__, template_folder="templates", static_folder="static"
-)
+home_blueprint = Blueprint("home_blueprint", __name__, template_folder="templates", static_folder="static")
 
 
-@home_bp.route("/", methods=["GET"])
+@home_blueprint.route("/", methods=["GET"])
 def home():
-    """Homepage."""
+    """Render application Homepage."""
     products = fetch_products(app)
     return render_template(
         "index.jinja2",
@@ -24,9 +22,9 @@ def home():
     )
 
 
-@home_bp.route("/about", methods=["GET"])
+@home_blueprint.route("/about", methods=["GET"])
 def about():
-    """About page."""
+    """Render static `about` page."""
     return render_template(
         "index.jinja2",
         title="About",
@@ -35,9 +33,9 @@ def about():
     )
 
 
-@home_bp.route("/contact", methods=["GET"])
+@home_blueprint.route("/contact", methods=["GET"])
 def contact():
-    """Contact page."""
+    """Render  page."""
     return render_template(
         "index.jinja2",
         title="Contact",

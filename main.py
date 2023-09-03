@@ -1,7 +1,12 @@
 """Application entry point."""
-from flask_blueprint_tutorial import init_app
+from flask_blueprint_tutorial import flask_app
 
-app = init_app()
+
+def init_app():
+    """Initialize Flask application."""
+    app = flask_app()
+    app.run(host="127.0.0.1", port=6416, debug=True)
+
 
 if __name__ == "__main__":
-    app.run(host="127.0.0.1", port=6416, debug=True)
+    init_app()

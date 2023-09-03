@@ -14,19 +14,19 @@ def compile_static_assets(assets):
         extra={"rel": "stylesheet/less"},
     )
     home_style_bundle = Bundle(
-        "home_bp/less/home.less",
+        "home_blueprint/less/home.less",
         filters="less,cssmin",
         output="dist/css/home.css",
         extra={"rel": "stylesheet/less"},
     )
     profile_style_bundle = Bundle(
-        "profile_bp/less/profile.less",
+        "profile_blueprint/less/profile.less",
         filters="less,cssmin",
         output="dist/css/profile.css",
         extra={"rel": "stylesheet/less"},
     )
     product_style_bundle = Bundle(
-        "products_bp/less/products.less",
+        "products_blueprint/less/products.less",
         filters="less,cssmin",
         output="dist/css/products.css",
         extra={"rel": "stylesheet/less"},

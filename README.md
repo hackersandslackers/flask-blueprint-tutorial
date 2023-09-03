@@ -23,7 +23,7 @@ Get set up locally in two steps:
 
 Replace the values in **.env.example** with your values and rename this file to **.env**:
 
-* `FLASK_APP`: Entry point of your application; should be `wsgi.py`.
+* `FLASK_APP`: Entry point of your application; should be `main.py`.
 * `FLASK_ENV`: The environment in which to run your application; either `development` or `production`.
 * `SECRET_KEY`: Randomly generated string of characters used to encrypt your app's data.
 * `LESS_BIN` *(optional for static assets)*: Path to your local LESS installation via `which lessc`.

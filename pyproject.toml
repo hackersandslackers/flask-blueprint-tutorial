@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "flask_blueprint_tutorial"
-version = "0.1.0"
+version = "0.1.1"
 description = "Structure your Flask apps in a scalable and intelligent way using Blueprints."
 authors = ["Todd Birchard <todd@hackersandslackers.com>"]
 maintainers = ["Todd Birchard <todd@hackersandslackers.com>"]
@@ -16,7 +16,6 @@ python = "^3.10,<4"
 flask = "*"
 flask_assets = "*"
 faker = "*"
-requests = "*"
 python-dotenv = "*"
 uwsgi = "*"
 lesscpy = "*"
@@ -25,9 +24,10 @@ jsmin = "*"
 black = "*"
 isort = "*"
 flake8 = "*"
+mypy = "^1.5.1"
 
 [tool.poetry.scripts]
-run = "main:app"
+run = "main:init_app"
 
 [tool.poetry.urls]
 issues = "https://github.com/hackersandslackers/flask-blueprint-tutorial/issues"
