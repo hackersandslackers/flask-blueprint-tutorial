@@ -3,7 +3,7 @@ from flask import Flask
 from flask_assets import Environment
 
 
-def flask_app():
+def create_app():
     """Create Flask application."""
     app = Flask(__name__, instance_relative_config=False)
     app.config.from_object("config.Config")

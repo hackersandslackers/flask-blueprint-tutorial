@@ -13,7 +13,7 @@
 Structure your Flask apps in a scalable and intelligent way using Blueprints.
 
 * **Tutorial**: [https://hackersandslackers.com/flask-blueprints/](https://hackersandslackers.com/flask-blueprints/)
-* **Demo**: [https://flaskblueprints.hackersandslackers.app/](https://flaskblueprints.hackersandslackers.app/)
+* **Demo**: [https://flaskblueprints.hackersandslackers.app/](https://flaskblueprints.hackersandslackers.com/)
 
 ## Getting Started
 
@@ -23,8 +23,8 @@ Get set up locally in two steps:
 
 Replace the values in **.env.example** with your values and rename this file to **.env**:
 
-* `FLASK_APP`: Entry point of your application; should be `main.py`.
-* `FLASK_ENV`: The environment in which to run your application; either `development` or `production`.
+* `ENVIRONMENT`: The environment in which to run your application (either `development` or `production`).
+* `FLASK_APP`: Entry point of your application; should be `wsgi.py`.
 * `SECRET_KEY`: Randomly generated string of characters used to encrypt your app's data.
 * `LESS_BIN` *(optional for static assets)*: Path to your local LESS installation via `which lessc`.
 * `ASSETS_DEBUG` *(optional)*: Debug asset creation and bundling in `development`.

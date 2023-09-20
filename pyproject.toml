@@ -17,17 +17,17 @@ flask = "*"
 flask_assets = "*"
 faker = "*"
 python-dotenv = "*"
-uwsgi = "*"
 lesscpy = "*"
 cssmin = "*"
 jsmin = "*"
 black = "*"
 isort = "*"
 flake8 = "*"
-mypy = "^1.5.1"
+mypy = "*"
+gunicorn = "^21.2.0"
 
 [tool.poetry.scripts]
-run = "main:init_app"
+run = "wsgi:app"
 
 [tool.poetry.urls]
 issues = "https://github.com/hackersandslackers/flask-blueprint-tutorial/issues"

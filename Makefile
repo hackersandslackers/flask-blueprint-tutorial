@@ -30,13 +30,9 @@ $(VIRTUAL_ENV):
 		python3 -m venv $(VIRTUAL_ENV); \
 	fi
 
-.PHONY: dev
-dev: env
-	$(LOCAL_PYTHON) -m main --reload
-
 .PHONY: run
 run: env
-	  $(LOCAL_PYTHON) -m main
+	  $(LOCAL_PYTHON) -m gunicorn -w 4 wsgi:app
 
 .PHONY: install
 install: env
