@@ -9,8 +9,12 @@ profile_blueprint = Blueprint("profile_blueprint", __name__, template_folder="te
 
 
 @profile_blueprint.route("/profile", methods=["GET"])
-def user_profile():
-    """Logged-in user profile page."""
+def user_profile() -> str:
+    """
+    Logged-in user profile page.
+
+    :returns: str
+    """
     user = fake.simple_profile()
     job = fake.job()
     return render_template(

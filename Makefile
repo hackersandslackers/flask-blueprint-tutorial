@@ -32,7 +32,7 @@ $(VIRTUAL_ENV):
 
 .PHONY: run
 run: env
-	  $(LOCAL_PYTHON) -m gunicorn -w 4 wsgi:app
+	$(LOCAL_PYTHON) -m gunicorn -w 4 wsgi:app
 
 .PHONY: install
 install: env

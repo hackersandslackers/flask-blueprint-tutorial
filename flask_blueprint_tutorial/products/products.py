@@ -10,9 +10,14 @@ product_bp = Blueprint("products_blueprint", __name__, template_folder="template
 
 
 @product_bp.route("/products/<int:product_id>/", methods=["GET"])
-def product_page(product_id):
-    """Product description page."""
-    products_json = app.config["FLASK_ENV"]
+def product_page(product_id: int) -> str:
+    """
+    Product detail page for a given product ID.
+
+    :params int product_id: Unique product ID.
+
+    :returns: str
+    """
     product = fetch_products(app)[product_id]
     return render_template(
         "products.jinja2",

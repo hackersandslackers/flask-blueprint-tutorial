@@ -10,8 +10,12 @@ home_blueprint = Blueprint("home_blueprint", __name__, template_folder="template
 
 
 @home_blueprint.route("/", methods=["GET"])
-def home():
-    """Render application Homepage."""
+def home() -> str:
+    """
+    Serve `Home` page template.
+
+    :returns: str
+    """
     products = fetch_products(app)
     return render_template(
         "index.jinja2",
@@ -23,8 +27,12 @@ def home():
 
 
 @home_blueprint.route("/about", methods=["GET"])
-def about():
-    """Render static `about` page."""
+def about() -> str:
+    """
+    Serve `About` page template.
+
+    :returns: str
+    """
     return render_template(
         "index.jinja2",
         title="About",
@@ -34,8 +42,12 @@ def about():
 
 
 @home_blueprint.route("/contact", methods=["GET"])
-def contact():
-    """Render  page."""
+def contact() -> str:
+    """
+    Serve `Contact` page template.
+
+    :returns: str
+    """
     return render_template(
         "index.jinja2",
         title="Contact",
