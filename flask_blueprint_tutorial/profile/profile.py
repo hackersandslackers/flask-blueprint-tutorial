@@ -5,14 +5,16 @@ from flask import Blueprint, render_template
 fake = Faker()
 
 # Blueprint Configuration
-profile_bp = Blueprint(
-    "profile_bp", __name__, template_folder="templates", static_folder="static"
-)
+profile_blueprint = Blueprint("profile_blueprint", __name__, template_folder="templates", static_folder="static")
 
 
-@profile_bp.route("/profile", methods=["GET"])
-def user_profile():
-    """Logged-in user profile page."""
+@profile_blueprint.route("/profile", methods=["GET"])
+def user_profile() -> str:
+    """
+    Logged-in user profile page.
+
+    :returns: str
+    """
     user = fake.simple_profile()
     job = fake.job()
     return render_template(

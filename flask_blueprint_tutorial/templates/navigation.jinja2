@@ -2,19 +2,19 @@
   <div class="nav-wrapper">
 
     <div class="left-nav">
-      <a href="{{ url_for('home_bp.home') }}">
-        <img src="{{ url_for('static', filename='img/logo.png') }}" alt="logo"/>
+      <a href="{{ url_for('home_blueprint.home') }}">
+        <img src="{{ url_for('static', filename='dist/img/logo@2x.png') }}" alt="logo"/>
       </a>
-        <a href="{{ url_for('home_bp.home') }}">Home</a>
-        <a href="{{ url_for('home_bp.about') }}">About</a>
-        <a href="{{ url_for('home_bp.contact') }}">Contact</a>
+        <a href="{{ url_for('home_blueprint.home') }}">Home</a>
+        <a href="{{ url_for('home_blueprint.about') }}">About</a>
+        <a href="{{ url_for('home_blueprint.contact') }}">Contact</a>
     </div>
 
     <div class="right-nav">
-      {% if request.blueprint != 'profile_bp' %}
-        <a href="{{ url_for('profile_bp.user_profile') }}">My Account</a>
+      {% if request.blueprint != 'profile_blueprint' %}
+        <a href="{{ url_for('profile_blueprint.user_profile') }}">My Account</a>
       {% else %}
-        <a href="{{ url_for('home_bp.home') }}">Logout</a>
+        <a href="{{ url_for('home_blueprint.home') }}">Logout</a>
       {% endif %}
     </div>
 

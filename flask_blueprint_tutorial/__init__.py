@@ -2,10 +2,8 @@
 from flask import Flask
 from flask_assets import Environment
 
-from config import Config
 
-
-def init_app():
+def create_app():
     """Create Flask application."""
     app = Flask(__name__, instance_relative_config=False)
     app.config.from_object("config.Config")
@@ -20,8 +18,8 @@ def init_app():
         from .profile import profile
 
         # Register Blueprints
-        app.register_blueprint(profile.profile_bp)
-        app.register_blueprint(home.home_bp)
+        app.register_blueprint(profile.profile_blueprint)
+        app.register_blueprint(home.home_blueprint)
         app.register_blueprint(products.product_bp)
 
         # Compile static assets

@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "flask_blueprint_tutorial"
-version = "0.1.0"
-description = "Structure your Flask apps in a scalable and intelligent way using Blueprints."
+version = "0.1.1"
+description = "Organize your Flask applications neatly via Blueprints."
 authors = ["Todd Birchard <todd@hackersandslackers.com>"]
 maintainers = ["Todd Birchard <todd@hackersandslackers.com>"]
 license = "MIT"
@@ -15,19 +15,19 @@ keywords = ["Flask", "Flask-Blueprints", "Framework", "Python", "Tutorial"]
 python = "^3.10,<4"
 flask = "*"
 flask_assets = "*"
-faker = "*"
-requests = "*"
 python-dotenv = "*"
-uwsgi = "*"
+faker = "*"
 lesscpy = "*"
 cssmin = "*"
 jsmin = "*"
 black = "*"
 isort = "*"
 flake8 = "*"
+mypy = "*"
+gunicorn = "*"
 
 [tool.poetry.scripts]
-run = "main:app"
+run = "wsgi:app"
 
 [tool.poetry.urls]
 issues = "https://github.com/hackersandslackers/flask-blueprint-tutorial/issues"
@@ -41,3 +41,8 @@ disable = "C0103,C0301,W0703,W0621"
 
 [tool.black]
 line-length = 120
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+src_paths = ["flask_blueprint_tutorial", "config", "wsgi"]

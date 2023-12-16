@@ -1,0 +1,92 @@
+[
+    {
+        "customerReviewAverage": 5.00,
+        "customerReviewCount": 293,
+        "name": "Red Robin - $25 Gift Card",
+        "sku": 4259000,
+        "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/4259/4259000_sd.jpg",
+        "manufacturer": "Red Robin",
+        "longDescription": "Come in and enjoy an outrageously delicious burger with Bottomless Steak Fries. Pair it with a cold beer or signature Freckled Lemonade - it's a duo that's sure to make you smile.",
+        "salePrice": 25.00
+    },
+    {
+        "customerReviewAverage": 5.00,
+        "customerReviewCount": 53,
+        "name": "Bowers & Wilkins - 700 Series 3-way Floorstanding Speaker w/5\" midrange, dual 5\" bass (each) - White",
+        "sku": 6023602,
+        "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6023/6023602_sd.jpg",
+        "manufacturer": "Bowers & Wilkins",
+        "longDescription": "Generate commanding sound with this Bowers & Wilkins loudspeaker. Its Carbon Dome tweeter plays accurate, clear highs, and the two Aerofoil bass drivers deliver stiffness and rigidity while producing dynamic bass. This vented Bowers & Wilkins loudspeaker has a 5-inch midrange driver to round out its full sound, and its slim construction makes it suitable for small or large spaces.",
+        "salePrice": 1487.99
+    },
+    {
+        "customerReviewAverage": 5.00,
+        "customerReviewCount": 53,
+        "name": "Bowers & Wilkins - 700 Series 3-way Floorstanding Speaker w/5\" midrange, dual 5\" bass (each) - Gloss Black",
+        "sku": 6027601,
+        "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6027/6027601_sd.jpg",
+        "manufacturer": "Bowers & Wilkins",
+        "longDescription": "Enjoy accurate, realistic sound with this black Bowers & Wilkins floor speaker. Its two bass drivers deliver thumping low frequencies, and the Carbon Dome tweeter and midrange driver offer commanding, studio-quality audio. This Bowers & Wilkins floor speaker integrates into your living space and entertainment system for seamless sound production with a frequency range of 48Hz - 28kHz.",
+        "salePrice": 1487.99
+    },
+    {
+        "customerReviewAverage": 5.00,
+        "customerReviewCount": 55,
+        "name": "Canon - RF50mm F1.2 L USM Standard Prime Lens for EOS R-Series Cameras - Black",
+        "sku": 6298180,
+        "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6298/6298180_sd.jpg",
+        "manufacturer": "Canon",
+        "longDescription": "Capture high-quality images and sharp details with this 50mm Canon lens. The 1.31-foot minimum focusing distance and 0.19x magnification let you photograph from a range of distances, and its UD lens reduces distortion. This Canon lens has an added coating to minimize lens flare and ghosting in various types of light.",
+        "salePrice": 2199.99
+    },
+    {
+        "customerReviewAverage": 5.00,
+        "customerReviewCount": 83,
+        "name": "Nikkor Z 24-70mm f/2.8 S Optical Zoom Lens for Nikon Z - Black",
+        "sku": 6334316,
+        "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6334/6334316_sd.jpg",
+        "manufacturer": "Nikon",
+        "longDescription": "Capture high-quality photographs whether shooting at close, medium or long range with this Nikon NIKKOR Z 24-70mm lens. The dust-resistant and drip-resistant design helps keep this lens in good condition, and the auto-focusing feature is quick and quiet. This Nikon NIKKOR Z 24-70mm lens features a Z system that produces images with enhanced sharpness and illumination.",
+        "salePrice": 2099.99
+    },
+    {
+        "customerReviewAverage": 5.00,
+        "customerReviewCount": 64,
+        "name": "Apple Watch Ultra (GPS + Cellular) 49mm Titanium Case with White Ocean Band - Titanium (Verizon)",
+        "sku": 6340050,
+        "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6340/6340050_sd.jpg",
+        "manufacturer": "Apple",
+        "longDescription": "The most rugged and capable Apple Watch ever, designed for exploration, adventure, and endurance. With a 49mm aerospace-grade titanium case, extra-long battery life,&#185; specialized apps that work with the advanced sensors, and a new customizable Action button. See Dimension section below for band sizing information.",
+        "salePrice": 799.99
+    },
+    {
+        "customerReviewAverage": 5.00,
+        "customerReviewCount": 64,
+        "name": "Apple Watch Ultra (GPS + Cellular) 49mm Titanium Case with Yellow Ocean Band - Titanium (Verizon)",
+        "sku": 6340051,
+        "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6340/6340051_sd.jpg",
+        "manufacturer": "Apple",
+        "longDescription": "The most rugged and capable Apple Watch ever, designed for exploration, adventure, and endurance. With a 49mm aerospace-grade titanium case, extra-long battery life,&#185; specialized apps that work with the advanced sensors, and a new customizable Action button. See Dimension section below for band sizing information.",
+        "salePrice": 799.99
+    },
+    {
+        "customerReviewAverage": 5.00,
+        "customerReviewCount": 64,
+        "name": "Apple Watch Ultra (GPS + Cellular) 49mm Titanium Case with Midnight Ocean Band - Titanium (Verizon)",
+        "sku": 6340057,
+        "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6340/6340057_sd.jpg",
+        "manufacturer": "Apple",
+        "longDescription": "The most rugged and capable Apple Watch ever, designed for exploration, adventure, and endurance. With a 49mm aerospace-grade titanium case, extra-long battery life,&#185; specialized apps that work with the advanced sensors, and a new customizable Action button. See Dimension section below for band sizing information.",
+        "salePrice": 799.99
+    },
+    {
+        "customerReviewAverage": 5.00,
+        "customerReviewCount": 59,
+        "name": "NETGEAR - 8-Port 10/100/1000 Gigabit Ethernet PoE/PoE+ Unmanaged Switch",
+        "sku": 6356333,
+        "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6356/6356333_sd.jpg",
+        "manufacturer": "NETGEAR",
+        "longDescription": "Introducing the NETGEAR GS108LP 8-port Gigabit Ethernet unmanaged switch with 60W PoE budget. The flexible PoE+ integrated technology allows you to increase or decrease the PoE budget at any time to provide to your devices the power they need with interchangeable external power supply and an intuitive power selector. The compact and fanless design makes this switch an ideal solution to connect or power any device in any business environment.",
+        "salePrice": 98.99
+    }
+]
