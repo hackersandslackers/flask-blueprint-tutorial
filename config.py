@@ -24,11 +24,14 @@ class Config:
     COMPRESSOR_DEBUG = False
 
     # Flask-Assets
-    LESS_BIN = system("which lessc")
-    ASSETS_DEBUG = False
-    LESS_RUN_IN_DEBUG = False
-    if ENVIRONMENT == "development" and LESS_BIN is None:
-        raise ValueError("Application running in `development` mode cannot create assets without `lessc` installed.")
+    if ENVIRONMENT == "development":
+        LESS_BIN = system("which lessc")
+        ASSETS_DEBUG = False
+        LESS_RUN_IN_DEBUG = False
+        if LESS_BIN is None:
+            raise ValueError(
+                "Application running in `development` mode cannot create assets without `lessc` installed."
+            )
 
     # Hardcoded data
     PRODUCT_DATA_FILEPATH = f"{BASE_DIR}/data/products.json"
