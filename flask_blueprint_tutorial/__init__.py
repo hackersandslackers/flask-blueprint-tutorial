@@ -14,13 +14,13 @@ def create_app():
         # Import parts of our application
         from .assets import compile_static_assets
         from .home import home
-        from .products import products
+        from .product import product
         from .profile import profile
 
         # Register Blueprints
         app.register_blueprint(profile.profile_blueprint)
         app.register_blueprint(home.home_blueprint)
-        app.register_blueprint(products.product_bp)
+        app.register_blueprint(product.product_blueprint)
 
         # Compile static assets
         compile_static_assets(assets)

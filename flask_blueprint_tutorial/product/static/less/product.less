@@ -1,6 +1,6 @@
 @import 'vars.less';
 
-.profile-template {
+.product-template {
   .product-name {
     font-size: 1.9em;
     margin-bottom: 30px !important;
@@ -9,13 +9,20 @@
 
   .product-image {
     height: 250px;
+    max-width: 30vw;
     margin-right: 40px;
     border-radius: 3px;
   }
 
-  .product-flex {
-    display: flex;
-    justify-content: space-between;
+  .product-details {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    .product-info {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+    }
   }
 
   .meta {
@@ -41,8 +48,10 @@
     font-weight: 400;
     border: 1px solid @theme-color;
     transition: @transition;
-    padding: 8px 14px;
+    padding: 10px;
     font-size: 1em;
+    font-weight: bold;
+    max-width: 283px;
 
     &:hover {
       cursor: pointer;

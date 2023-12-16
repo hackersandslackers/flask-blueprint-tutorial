@@ -1,7 +1,7 @@
 {% extends "layout.jinja2" %}
 
 {% block pagestyles %}
-  {% assets "product_less_bundle" %}
+  {% assets "product_style_bundle" %}
     <link href="{{ ASSET_URL }}" rel="stylesheet" type="text/css">
   {% endassets %}
 {% endblock %}
@@ -11,9 +11,9 @@
 
   <div class="container">
     <h1 class="product-name">{{ product.name }}</h1>
-    <div class="product-flex">
-      <img class="product-image" src="{{ product.image }}" alt="profile">
-      <div class="product-details">
+    <div class="product-details">
+      <img class="product-image" src="{{ product.image }}" alt="{{ product.name }}">
+      <div class="product-info">
         <div class="product-price meta"><span class="meta-name">Price:</span> <span>${{ product.salePrice }}</span></div>
         <div class="product-review-average meta"><span class="meta-name">Rating:</span> <span>{{ product.customerReviewAverage }}/5</span></div>
         <div class="product-review-count meta"><span class="meta-name"># Reviews:</span> <span>{{ product.customerReviewCount }}</span></div>

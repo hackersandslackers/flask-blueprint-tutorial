@@ -32,9 +32,9 @@ def compile_static_assets(assets: Bundle) -> Bundle:
         extra={"rel": "stylesheet/less"},
     )
     product_style_bundle = Bundle(
-        "products_blueprint/less/products.less",
+        "product_blueprint/less/product.less",
         filters="less,cssmin",
-        output="dist/css/products.css",
+        output="dist/css/product.css",
         extra={"rel": "stylesheet/less"},
     )
     assets.register("common_style_bundle", common_style_bundle)
