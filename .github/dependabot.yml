@@ -9,8 +9,7 @@ updates:
   ignore:
   - dependency-name: black
     versions:
-    - 21.4b0
-    - 21.4b1
+    - 23.12.1
   - dependency-name: faker
     versions:
     - 5.8.0
@@ -39,7 +38,7 @@ updates:
     - 1.26.3
   - dependency-name: pytest
     versions:
-    - 6.2.2
+    - 7.4.3
   - dependency-name: isort
     versions:
-    - 5.7.0
+    - 5.13.2

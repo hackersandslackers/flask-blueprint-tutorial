@@ -1,5 +1,6 @@
 """Class-based Flask app configuration."""
-from os import environ, path, system
+import subprocess
+from os import environ, path
 
 from dotenv import load_dotenv
 
@@ -25,13 +26,17 @@ class Config:
 
     # Flask-Assets
     if ENVIRONMENT == "development":
-        LESS_BIN = system("which lessc")
-        ASSETS_DEBUG = False
-        LESS_RUN_IN_DEBUG = False
+        # Check if `lessc` is installed
+        LESS_BIN = subprocess.call("which lessc", shell=True)
         if LESS_BIN is None:
-            raise ValueError(
-                "Application running in `development` mode cannot create assets without `lessc` installed."
-            )
+            raise ValueError("Flask requires `lessc` to be installed to compile styles.")
+        else:
+            # Check if `nodejs` is installed
+            NODE_JS = subprocess.call("which node", shell=True)
+            if NODE_JS is None:
+                raise ValueError(
+                    "Application running in `development` mode cannot create assets without `node` installed."
+                )
 
     # Hardcoded data
     PRODUCT_DATA_FILEPATH = f"{BASE_DIR}/data/products.json"
