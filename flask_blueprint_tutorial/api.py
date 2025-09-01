@@ -1,4 +1,5 @@
 """Read placeholder data for demo purposes."""
+
 import json
 
 from flask import Flask

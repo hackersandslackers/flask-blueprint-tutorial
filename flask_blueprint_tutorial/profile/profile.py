@@ -1,4 +1,5 @@
 """Routes for logged-in profile."""
+
 from faker import Faker
 from flask import Blueprint, render_template
 

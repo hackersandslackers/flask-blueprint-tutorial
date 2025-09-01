@@ -1,4 +1,5 @@
 """Class-based Flask app configuration."""
+
 import subprocess
 from os import environ, path
 

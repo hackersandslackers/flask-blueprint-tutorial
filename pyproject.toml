@@ -12,7 +12,7 @@ documentation = "https://hackersandslackers.com/flask-blueprints/"
 keywords = ["Flask", "Flask-Blueprints", "Framework", "Python", "Tutorial"]
 
 [tool.poetry.dependencies]
-python = "^3.10,<4"
+python = "^3.12,<4"
 flask = "*"
 flask_assets = "*"
 python-dotenv = "*"
